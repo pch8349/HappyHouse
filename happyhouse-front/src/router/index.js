@@ -127,7 +127,7 @@ const routes = [
       {
         path: "detail/:idx",
         name: "noticeDetail",
-        beforeEnter: onlyAdminUser,
+        beforeEnter: onlyAuthUser,
         component: () => import("@/components/notice/NoticeDetail.vue"),
       },
       {

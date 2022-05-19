@@ -60,13 +60,13 @@
 </template>
 
 <script>
-import { writeNoArticle, getNoArticle, modifyNoArticle } from "@/api/board";
+import { writeNoArticle, getNoArticle, modifyNoArticle } from "@/api/notice";
 import { mapState } from "vuex";
 
 const memberStore = "memberStore";
 
 export default {
-  name: "BoardInputItem",
+  name: "NoticeInputItem",
   data() {
     return {
       noarticle: {
@@ -96,7 +96,7 @@ export default {
         },
         (error) => {
           console.log(error);
-        }
+        },
       );
       this.isid = true;
     } else {
@@ -131,7 +131,7 @@ export default {
       this.noarticle.idx = 0;
       this.noarticle.title = "";
       this.noarticle.content = "";
-      this.$router.push({ name: "boardList" });
+      this.$router.push({ name: "noticeList" });
     },
     registNoArticle() {
       writeNoArticle(
@@ -150,7 +150,7 @@ export default {
         },
         (error) => {
           console.log(error);
-        }
+        },
       );
     },
     modifyNoArticle() {
@@ -168,15 +168,15 @@ export default {
           }
           alert(msg);
           // 현재 route를 /list로 변경.
-          this.$router.push({ name: "boardList" });
+          this.$router.push({ name: "noticeList" });
         },
         (error) => {
           console.log(error);
-        }
+        },
       );
     },
     moveList() {
-      this.$router.push({ name: "boardList" });
+      this.$router.push({ name: "noticeList" });
     },
   },
 };
