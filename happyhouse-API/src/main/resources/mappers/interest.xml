@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ssafy.happyhouse.model.mapper.InterestMapper">
+	
+	<select id="selectAllById" parameterType="string" resultType="Interest">
+		select *
+		from favorite
+		where id = #{id}
+	</select>
+	
+	<select id="selectOne" parameterType="int" resultType="Interest">
+		select *
+		from favorite
+		where idx = #{idx}
+	</select>
+	
+	<insert id="insert" parameterType="Interest">
+		insert into favorite (sidoName, gugunName, id)
+		values(#{sidoName},#{gugunName},#{id})
+	</insert>
+	
+	<update id="update" parameterType="Interest">
+		update favorite
+		set sidoName = #{sidoName}, gugunName = #{gugunName}
+		where idx = #{idx}
+	</update>
+	
+	<delete id="delete" parameterType="int">
+		delete from favorite
+		where idx=#{idx}
+	</delete>
+	
+	<select id="selectHospital" parameterType="map" resultType="Hospital">
+		select *
+		from hospital
+		where sidoName like concat('%', #{sidoName}, '%') and gugunName like concat('%', #{gugunName}, '%')
+		limit 50
+	</select>
+	
+	<select id="selectShop" parameterType="map" resultType="Shop">
+		select *
+		from shop
+		where sidoName like concat('%', #{sidoName}, '%') and gugunName like concat('%', #{gugunName}, '%')
+		limit 50
+	</select>
+	
+</mapper>

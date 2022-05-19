@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ssafy.happyhouse.model.mapper.NoticeMapper">
+	<select id="selectAll" resultType="Notice">
+		select idx, title, content, id,
+		 	case when date_format(date, '%y%m%d') = date_format(now(), '%y%m%d')
+		 		then date_format(date, '%H:%i:%d')
+		 		else date_format(date, '%y.%m.%d')
+		 	end date
+		 from notice
+		 order by idx desc
+	</select>
+	
+	<select id="selectOne" parameterType="int" resultType="Notice">
+		select idx, title, content, id, date
+		from notice
+		where idx = #{idx}
+	</select>
+	
+	<insert id="insert" parameterType="Notice">
+		insert into notice (title, content, id, date)
+		values (#{title}, #{content}, #{id}, now())
+	</insert>
+	
+	<update id="update" parameterType="Notice">
+		update notice
+		set title = #{title}, content = #{content}
+		where idx = #{idx}
+	</update>
+	
+	<delete id="delete" parameterType="int">
+		delete from notice
+		where idx = #{idx}
+	</delete>
+</mapper>
