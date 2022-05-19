@@ -38,6 +38,7 @@ public class BoardController {
     @ApiOperation(value = "게시판 글목록", notes = "모든 게시글의 정보를 반환한다.", response = List.class)
 	@GetMapping
 	public ResponseEntity<List<Board>> retrieveBoard() throws Exception {
+    	System.out.println("하이");
 		logger.debug("retrieveBoard - 호출");
 		return new ResponseEntity<List<Board>>(boardService.retrieveBoard(), HttpStatus.OK);
 	}
