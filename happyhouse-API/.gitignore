@@ -5,7 +5,7 @@ target/
 !**/src/test/**/target/
 
 ### STS ###
-/log/
+
 
 ### IntelliJ IDEA ###
 .idea
