@@ -108,7 +108,7 @@ public class MemberController {
 	@GetMapping("/idcheck/{id}")
 	public ResponseEntity<String> idCheck(
 			@PathVariable @ApiParam(value = "인증할 회원의 아이디.", required = true) String id) throws Exception {
-
+		System.out.println(id);
 		if(memberService.idCheck(id)) {
 			return new ResponseEntity<String>(SUCCESS, HttpStatus.OK);
 		}
@@ -118,7 +118,7 @@ public class MemberController {
 	@PostMapping
 	public ResponseEntity<String> regist(
 			@RequestBody MemberDto memberDto) throws Exception {
-
+		System.out.println(memberDto);
 		if(memberService.registerMember(memberDto)) {
 			return new ResponseEntity<String>(SUCCESS, HttpStatus.OK);
 		}
@@ -133,7 +133,7 @@ public class MemberController {
 	@PutMapping("{id}")
 	public ResponseEntity<String> update(
 			@RequestBody MemberDto memberDto) throws Exception {
-
+		System.out.println(memberDto);
 		if(memberService.updateMember(memberDto)) {
 			return new ResponseEntity<String>(SUCCESS, HttpStatus.OK);
 		}
