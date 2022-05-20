@@ -4,6 +4,37 @@
 
 <mapper namespace="com.ssafy.vue.mapper.MemberMapper">
 
+	<select id="idCheck" parameterType="string" resultType="int">
+		select count(id)
+		from user
+		where id = #{id}
+	</select>
+
+	<insert id="registerMember" parameterType="MemberDto">
+		insert into user (id, name, password, email, joindate)
+		values (#{id}, #{name}, #{password}, #{email}, now())
+	</insert>
+
+	<select id="getMember" parameterType="String" resultType="memberdto">
+		select id, password, name, email, date_format(joindate, '%y.%m.%d') joindate
+		from user
+		where id = #{id}
+	</select>
+	
+	<update id="updateMember" parameterType="MemberDto">
+		update user
+		<trim prefix="set" suffixOverrides=",">
+			<if test="password != null">password = #{password},</if>
+			<if test="email != null">email = #{email},</if>
+		</trim>
+		where id = #{id}
+	</update>
+	
+	<delete id="deleteMember" parameterType="String">
+		delete from user
+		where id = #{id}
+	</delete>
+
 	<select id="login" parameterType="memberDto" resultType="memberDto">
 		select name, id, email
 		from user

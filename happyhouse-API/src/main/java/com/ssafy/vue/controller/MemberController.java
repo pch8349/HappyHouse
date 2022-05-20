@@ -10,13 +10,16 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.ssafy.vue.dto.Board;
 import com.ssafy.vue.dto.MemberDto;
 import com.ssafy.vue.service.JwtServiceImpl;
 import com.ssafy.vue.service.MemberService;
@@ -75,7 +78,7 @@ public class MemberController {
 	@ApiOperation(value = "회원인증", notes = "회원 정보를 담은 Token을 반환한다.", response = Map.class)
 	@GetMapping("/info/{id}")
 	public ResponseEntity<Map<String, Object>> getInfo(
-			@PathVariable("id") @ApiParam(value = "인증할 회원의 아이디.", required = true) String id,
+			@PathVariable @ApiParam(value = "인증할 회원의 아이디.", required = true) String id,
 			HttpServletRequest request) {
 //		logger.debug("userid : {} ", userid);
 		Map<String, Object> resultMap = new HashMap<>();
@@ -100,5 +103,50 @@ public class MemberController {
 		}
 		return new ResponseEntity<Map<String, Object>>(resultMap, status);
 	}
+	
+	@ApiOperation(value = "회원검사", notes = "회원 아이디 중복 검사", response = String.class)
+	@GetMapping("/idcheck/{id}")
+	public ResponseEntity<String> idCheck(
+			@PathVariable @ApiParam(value = "인증할 회원의 아이디.", required = true) String id) throws Exception {
 
+		if(memberService.idCheck(id)) {
+			return new ResponseEntity<String>(SUCCESS, HttpStatus.OK);
+		}
+		return new ResponseEntity<String>(FAIL, HttpStatus.NO_CONTENT);
+	}
+
+	@PostMapping
+	public ResponseEntity<String> regist(
+			@RequestBody MemberDto memberDto) throws Exception {
+
+		if(memberService.registerMember(memberDto)) {
+			return new ResponseEntity<String>(SUCCESS, HttpStatus.OK);
+		}
+		return new ResponseEntity<String>(FAIL, HttpStatus.NO_CONTENT);
+	}
+	
+	@GetMapping("{id}")
+	public ResponseEntity<MemberDto> detail(@PathVariable String id) throws Exception {
+		return new ResponseEntity<MemberDto>(memberService.getMember(id), HttpStatus.OK);
+	}
+	
+	@PutMapping("{id}")
+	public ResponseEntity<String> update(
+			@RequestBody MemberDto memberDto) throws Exception {
+
+		if(memberService.updateMember(memberDto)) {
+			return new ResponseEntity<String>(SUCCESS, HttpStatus.OK);
+		}
+		return new ResponseEntity<String>(FAIL, HttpStatus.NO_CONTENT);
+	}
+	
+	@DeleteMapping("{id}")
+	public ResponseEntity<String> delete(@PathVariable String id) throws Exception {
+
+		if(memberService.deleteMember(id)) {
+			return new ResponseEntity<String>(SUCCESS, HttpStatus.OK);
+		}
+		return new ResponseEntity<String>(FAIL, HttpStatus.NO_CONTENT);
+	}
+	
 }
