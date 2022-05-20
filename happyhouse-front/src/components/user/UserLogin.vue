@@ -46,6 +46,13 @@
               @click="movePage"
               >회원가입</b-button
             >
+            <b-button
+              type="button"
+              variant="success"
+              class="m-1"
+              @click="moveSearchPassword"
+              >비밀번호 찾기</b-button
+            >
           </b-form>
         </b-card>
       </b-col>
@@ -85,6 +92,9 @@ export default {
     },
     movePage() {
       this.$router.push({ name: "signUp" });
+    },
+    moveSearchPassword() {
+      this.$router.push({ name: "userPasswordSearch" });
     },
   },
 };

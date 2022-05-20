@@ -47,6 +47,7 @@ const userStore = {
     },
     getUserInfo({ commit }, token) {
       let decode_token = jwt_decode(token);
+      console.log(decode_token);
       findById(
         decode_token.id, //userid
         (response) => {

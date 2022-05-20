@@ -86,6 +86,11 @@ const routes = [
         beforeEnter: onlyAuthUser, //로그인 했는지 안했는지
         component: () => import("@/components/user/UserPasswordModify.vue"),
       },
+      {
+        path: "userpasswordsearch",
+        name: "userPasswordSearch",
+        component: () => import("@/components/user/UserPasswordSearch.vue"),
+      },
     ],
   },
   {
