@@ -45,8 +45,16 @@
           </b-container>
           <hr class="my-4" />
 
-          <b-button variant="primary" href="#" class="mr-1">정보수정</b-button>
-          <b-button variant="danger" href="#">회원탈퇴</b-button>
+          <b-button
+            variant="primary"
+            href="#"
+            class="mr-1"
+            @click="onClickModifyUser"
+            >정보수정</b-button
+          >
+          <b-button variant="danger" href="#" @click.prevent="onClickDeleteUser"
+            >회원탈퇴</b-button
+          >
         </b-jumbotron>
       </b-col>
       <b-col></b-col>
@@ -55,7 +63,8 @@
 </template>
 
 <script>
-import { mapState } from "vuex";
+import { mapState, mapMutations } from "vuex";
+import { deleteUser } from "@/api/user";
 
 const userStore = "userStore";
 
@@ -63,7 +72,29 @@ export default {
   name: "UserMyPage",
   components: {},
   computed: {
-    ...mapState(userStore, ["userInfo"]),
+    ...mapState(userStore, ["isLogin", "userInfo"]),
+  },
+  methods: {
+    ...mapMutations(userStore, ["SET_IS_LOGIN", "SET_USER_INFO"]),
+    async onClickDeleteUser() {
+      let flag = false;
+      if (confirm("정말로 탈퇴하겠습니까?")) {
+        await deleteUser(this.userInfo.id, () => {
+          flag = true;
+        });
+      }
+      if (flag) {
+        this.SET_IS_LOGIN(false);
+        this.SET_USER_INFO(null);
+        sessionStorage.removeItem("access-token");
+        if (this.$route.path != "/") this.$router.push({ name: "home" });
+      }
+      // console.log("userStore : ", ms);
+    },
+    onClickModifyUser() {
+      this.$router.push({ name: "userModify" });
+      // console.log("userStore : ", ms);
+    },
   },
 };
 </script>

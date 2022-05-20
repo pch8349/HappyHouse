@@ -84,7 +84,7 @@ export default {
       }
     },
     movePage() {
-      this.$router.push({ name: "signup" });
+      this.$router.push({ name: "signUp" });
     },
   },
 };

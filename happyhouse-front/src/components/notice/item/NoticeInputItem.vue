@@ -96,7 +96,7 @@ export default {
         },
         (error) => {
           console.log(error);
-        }
+        },
       );
       this.isid = true;
     } else {
@@ -150,7 +150,7 @@ export default {
         },
         (error) => {
           console.log(error);
-        }
+        },
       );
     },
     modifyNoArticle() {
@@ -172,7 +172,7 @@ export default {
         },
         (error) => {
           console.log(error);
-        }
+        },
       );
     },
     moveList() {

@@ -59,12 +59,12 @@ const routes = [
     component: () => import("@/views/UserView.vue"),
     children: [
       {
-        path: "singin",
+        path: "signin",
         name: "signIn",
         component: () => import("@/components/user/UserLogin.vue"),
       },
       {
-        path: "singup",
+        path: "signup",
         name: "signUp",
         component: () => import("@/components/user/UserRegister.vue"),
       },
@@ -75,10 +75,16 @@ const routes = [
         component: () => import("@/components/user/UserMyPage.vue"),
       },
       {
-        path: "",
-        name: "",
+        path: "usermodify",
+        name: "userModify",
         beforeEnter: onlyAuthUser, //로그인 했는지 안했는지
-        component: () => import("@/components/user/UserMyPage.vue"),
+        component: () => import("@/components/user/UserModify.vue"),
+      },
+      {
+        path: "userpasswordmodify",
+        name: "userPasswordModify",
+        beforeEnter: onlyAuthUser, //로그인 했는지 안했는지
+        component: () => import("@/components/user/UserPasswordModify.vue"),
       },
     ],
   },

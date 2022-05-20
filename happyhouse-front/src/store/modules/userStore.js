@@ -1,7 +1,6 @@
 /* eslint-disable prettier/prettier */
 import jwt_decode from "jwt-decode";
-import { login } from "@/api/user.js";
-import { findById } from "../../api/user";
+import { login, findById } from "@/api/user.js";
 
 const userStore = {
   namespaced: true,
