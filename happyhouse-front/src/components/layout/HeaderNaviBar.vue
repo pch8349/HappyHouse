@@ -100,19 +100,19 @@
 
 <script>
 import { mapState, mapMutations } from "vuex";
-// import ms from "@/store/modules/memberStore";
+// import ms from "@/store/modules/userStore";
 
-const memberStore = "memberStore";
+const userStore = "userStore";
 
 export default {
   name: "HeaderNaviBar",
   computed: {
-    ...mapState(memberStore, ["isLogin", "userInfo"]),
+    ...mapState(userStore, ["isLogin", "userInfo"]),
   },
   methods: {
-    ...mapMutations(memberStore, ["SET_IS_LOGIN", "SET_USER_INFO"]),
+    ...mapMutations(userStore, ["SET_IS_LOGIN", "SET_USER_INFO"]),
     onClickLogout() {
-      // console.log("memberStore : ", ms);
+      // console.log("userStore : ", ms);
       this.SET_IS_LOGIN(false);
       this.SET_USER_INFO(null);
       sessionStorage.removeItem("access-token");

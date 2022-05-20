@@ -57,10 +57,10 @@
 <script>
 import { mapState, mapActions } from "vuex";
 
-const memberStore = "memberStore";
+const userStore = "userStore";
 
 export default {
-  name: "MemberLogin",
+  name: "UserLogin",
   data() {
     return {
       user: {
@@ -70,10 +70,10 @@ export default {
     };
   },
   computed: {
-    ...mapState(memberStore, ["isLogin", "isLoginError"]),
+    ...mapState(userStore, ["isLogin", "isLoginError"]),
   },
   methods: {
-    ...mapActions(memberStore, ["userConfirm", "getUserInfo"]), //store/moudles/memberStore/actions/userConfirm로 이동함
+    ...mapActions(userStore, ["userConfirm", "getUserInfo"]), //store/moudles/userStore/actions/userConfirm로 이동함
     async confirm() {
       //로그인 버튼을 누르면 호출됨
       await this.userConfirm(this.user); //userConfirm을 가지고 호출됨

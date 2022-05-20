@@ -36,7 +36,7 @@ import { mapState, mapActions /*, mapMutations*/ } from "vuex";
 
   modules: {
     키: 값
-    memberStore: memberStore,
+    userStore: userStore,
     houseStore: houseStore
   }  
 */

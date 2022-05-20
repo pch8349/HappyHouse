@@ -63,7 +63,7 @@
 import { writeArticle, getArticle, modifyArticle } from "@/api/board";
 import { mapState } from "vuex";
 
-const memberStore = "memberStore";
+const userStore = "userStore";
 
 export default {
   name: "BoardInputItem",
@@ -81,7 +81,7 @@ export default {
     type: { type: String },
   },
   computed: {
-    ...mapState(memberStore, ["userInfo"]),
+    ...mapState(userStore, ["userInfo"]),
   },
   created() {
     if (this.type === "modify") {

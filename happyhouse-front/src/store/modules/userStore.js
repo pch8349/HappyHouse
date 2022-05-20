@@ -1,9 +1,9 @@
 /* eslint-disable prettier/prettier */
 import jwt_decode from "jwt-decode";
-import { login } from "@/api/member.js";
-import { findById } from "../../api/member";
+import { login } from "@/api/user.js";
+import { findById } from "../../api/user";
 
-const memberStore = {
+const userStore = {
   namespaced: true,
   state: {
     isLogin: false,
@@ -65,4 +65,4 @@ const memberStore = {
   },
 };
 
-export default memberStore;
+export default userStore;

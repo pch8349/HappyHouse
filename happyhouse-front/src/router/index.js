@@ -9,8 +9,8 @@ Vue.use(VueRouter);
 // https://router.vuejs.org/kr/guide/advanced/navigation-guards.html
 const onlyAuthUser = async (to, from, next) => {
   // console.log(store);
-  const checkUserInfo = store.getters["memberStore/checkUserInfo"]; //토큰 정보 가져오기
-  const getUserInfo = store._actions["memberStore/getUserInfo"]; //유저의 정보를 얻어와 유효성 검사
+  const checkUserInfo = store.getters["userStore/checkUserInfo"]; //토큰 정보 가져오기
+  const getUserInfo = store._actions["userStore/getUserInfo"]; //유저의 정보를 얻어와 유효성 검사
   let token = sessionStorage.getItem("access-token");
   if (checkUserInfo == null && token) {
     await getUserInfo(token);
@@ -27,8 +27,8 @@ const onlyAuthUser = async (to, from, next) => {
 
 const onlyAdminUser = async (to, from, next) => {
   // console.log(store);
-  const checkUserInfo = store.getters["memberStore/checkUserInfo"]; //토큰 정보 가져오기
-  const getUserInfo = store._actions["memberStore/getUserInfo"]; //유저의 정보를 얻어와 유효성 검사
+  const checkUserInfo = store.getters["userStore/checkUserInfo"]; //토큰 정보 가져오기
+  const getUserInfo = store._actions["userStore/getUserInfo"]; //유저의 정보를 얻어와 유효성 검사
   let token = sessionStorage.getItem("access-token");
   if (checkUserInfo == null && token) {
     await getUserInfo(token);
@@ -56,23 +56,29 @@ const routes = [
   {
     path: "/user",
     name: "user",
-    component: () => import("@/views/MemberView.vue"),
+    component: () => import("@/views/UserView.vue"),
     children: [
       {
         path: "singin",
         name: "signIn",
-        component: () => import("@/components/user/MemberLogin.vue"),
+        component: () => import("@/components/user/UserLogin.vue"),
       },
       {
         path: "singup",
         name: "signUp",
-        component: () => import("@/components/user/MemberRegister.vue"),
+        component: () => import("@/components/user/UserRegister.vue"),
       },
       {
         path: "mypage",
         name: "mypage",
         beforeEnter: onlyAuthUser, //로그인 했는지 안했는지
-        component: () => import("@/components/user/MemberMyPage.vue"),
+        component: () => import("@/components/user/UserMyPage.vue"),
+      },
+      {
+        path: "",
+        name: "",
+        beforeEnter: onlyAuthUser, //로그인 했는지 안했는지
+        component: () => import("@/components/user/UserMyPage.vue"),
       },
     ],
   },

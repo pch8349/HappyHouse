@@ -63,7 +63,7 @@
 import { writeNoArticle, getNoArticle, modifyNoArticle } from "@/api/notice";
 import { mapState } from "vuex";
 
-const memberStore = "memberStore";
+const userStore = "userStore";
 
 export default {
   name: "NoticeInputItem",
@@ -81,7 +81,7 @@ export default {
     type: { type: String },
   },
   computed: {
-    ...mapState(memberStore, ["userInfo"]),
+    ...mapState(userStore, ["userInfo"]),
   },
   created() {
     if (this.type === "modify") {
@@ -96,7 +96,7 @@ export default {
         },
         (error) => {
           console.log(error);
-        },
+        }
       );
       this.isid = true;
     } else {
@@ -150,7 +150,7 @@ export default {
         },
         (error) => {
           console.log(error);
-        },
+        }
       );
     },
     modifyNoArticle() {
@@ -172,7 +172,7 @@ export default {
         },
         (error) => {
           console.log(error);
-        },
+        }
       );
     },
     moveList() {
