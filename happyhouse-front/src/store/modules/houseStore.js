@@ -5,8 +5,8 @@ import { sidoList, gugunList, houseList } from "@/api/house.js";
 const houseStore = {
   namespaced: true,
   state: {
-    sidos: [{ value: null, text: "선택하세요" }],
-    guguns: [{ value: null, text: "선택하세요" }],
+    sidos: [{ value: null, text: "시/도를 선택하세요" }],
+    guguns: [{ value: null, text: "구/군을 선택하세요" }],
     houses: [],
     house: null,
     sidoname: "",
@@ -31,10 +31,10 @@ const houseStore = {
       });
     },
     CLEAR_SIDO_LIST: (state) => {
-      state.sidos = [{ value: null, text: "선택하세요" }];
+      state.sidos = [{ value: null, text: "시/도를 선택하세요" }];
     },
     CLEAR_GUGUN_LIST: (state) => {
-      state.guguns = [{ value: null, text: "선택하세요" }];
+      state.guguns = [{ value: null, text: "구/군을 선택하세요" }];
     },
     SET_HOUSE_LIST: (state, houses) => {
       //   console.log(houses);
@@ -90,7 +90,8 @@ const houseStore = {
         }
       );
     },
-    getHouseList: ({ commit }, gugunCode) => {
+    getHouseList: ({ commit }, { gugunCode, ymd }) => {
+      console.log(ymd);
       // vue cli enviroment variables 검색
       //.env.local file 생성.
       // 반드시 VUE_APP으로 시작해야 한다.
@@ -99,7 +100,7 @@ const houseStore = {
       //     "9Xo0vlglWcOBGUDxH8PPbuKnlBwbWU6aO7%2Bk3FV4baF9GXok1yxIEF%2BIwr2%2B%2F%2F4oVLT8bekKU%2Bk9ztkJO0wsBw%3D%3D";
       const params = {
         LAWD_CD: gugunCode,
-        DEAL_YMD: "202110",
+        DEAL_YMD: ymd,
         serviceKey: decodeURIComponent(SERVICE_KEY),
       };
       houseList(

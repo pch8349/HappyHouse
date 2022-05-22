@@ -11,6 +11,12 @@
       <b-button variant="outline-primary" @click="sendKeyword">검색</b-button>
     </b-col> -->
     <b-col class="sm-3">
+      <b-form-select v-model="yyyy" :options="yList"></b-form-select>
+    </b-col>
+    <b-col class="sm-3">
+      <b-form-select v-model="mm" :options="mList"></b-form-select>
+    </b-col>
+    <b-col class="sm-3">
       <b-form-select
         v-model="sidoCode"
         :options="sidos"
@@ -48,6 +54,10 @@ export default {
     return {
       sidoCode: null,
       gugunCode: null,
+      yyyy: null,
+      mm: null,
+      yList: [{ text: "연도를 선택하세요", value: null }],
+      mList: [{ text: "월을 선택하세요", value: null }],
     };
   },
   computed: {
@@ -68,6 +78,16 @@ export default {
     // this.sidoList();
     this.clearSido();
     this.getSido();
+
+    const nowYear = new Date().getFullYear();
+    for (let i = 0; i < 30; i++) {
+      let date = nowYear - i;
+      this.yList.push({ value: date, text: date + "년" });
+    }
+    for (let i = 1; i < 13; i++) {
+      if (i < 10) this.mList.push({ value: "0" + String(i), text: i + "월" });
+      else this.mList.push({ value: i, text: i + "월" });
+    }
   },
   methods: {
     ...mapActions(houseStore, [
@@ -102,7 +122,12 @@ export default {
           this.setGugunName(this.guguns[i].text);
       }
       console.log(this.sidoname + this.gugunname);
-      if (this.gugunCode) this.getHouseList(this.gugunCode);
+      if (this.gugunCode)
+        this.getHouseList({
+          gugunCode: this.gugunCode,
+          ymd: String(this.yyyy) + String(this.mm),
+        });
+      console.log(String(this.yyyy) + String(this.mm));
     },
   },
 };
