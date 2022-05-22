@@ -35,14 +35,14 @@
 	<select id="selectHospital" parameterType="map" resultType="Hospital">
 		select *
 		from hospital
-		where sidoName like concat('%', #{sidoName}, '%') and gugunName like concat('%', #{gugunName}, '%')
+		where gugunName like concat('%', #{gugunName}, '%')
 		limit 50
 	</select>
 	
 	<select id="selectShop" parameterType="map" resultType="Shop">
 		select *
 		from shop
-		where sidoName like concat('%', #{sidoName}, '%') and gugunName like concat('%', #{gugunName}, '%')
+		where gugunName like concat('%', #{gugunName}, '%')
 		limit 50
 	</select>
 	

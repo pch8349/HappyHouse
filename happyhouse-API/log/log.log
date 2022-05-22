@@ -1,552 +1,151 @@
-[2m2022-05-20 10:36:42.787[0;39m [32m INFO[0;39m [35m37052[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.e.DevToolsPropertyDefaultsPostProcessor[0;39m [2m:[0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-[2m2022-05-20 10:36:42.791[0;39m [32m INFO[0;39m [35m37052[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.e.DevToolsPropertyDefaultsPostProcessor[0;39m [2m:[0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-[2m2022-05-20 10:36:44.030[0;39m [32m INFO[0;39m [35m37052[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 9999 (http)
-[2m2022-05-20 10:36:44.219[0;39m [32m INFO[0;39m [35m37052[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 1428 ms
-[2m2022-05-20 10:36:44.862[0;39m [32m INFO[0;39m [35m37052[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.d.a.OptionalLiveReloadServer      [0;39m [2m:[0;39m LiveReload server is running on port 35729
-[2m2022-05-20 10:36:45.000[0;39m [32m INFO[0;39m [35m37052[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat started on port(s): 9999 (http) with context path '/vue'
-[2m2022-05-20 10:37:23.188[0;39m [32m INFO[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Initializing Servlet 'dispatcherServlet'
-[2m2022-05-20 10:37:23.190[0;39m [32m INFO[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Completed initialization in 1 ms
-[2m2022-05-20 10:37:23.504[0;39m [32mDEBUG[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 로그인 토큰정보 : eyJ0eXAiOiJKV1QiLCJyZWdEYXRlIjoxNjUzMDEwNjQzNDgxLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NTMwMTQyNDMsInN1YiI6ImFjY2Vzcy10b2tlbiIsImlkIjoic3NhZnkifQ.DXdHHFp42h4oyToM8nTBZBRvoWzBkmOVRbCQ8WtysQk
-[2m2022-05-20 10:37:23.552[0;39m [32m INFO[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-4][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 사용 가능한 토큰!!!
-[2m2022-05-20 10:40:13.912[0;39m [32mDEBUG[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-7][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 로그인 토큰정보 : eyJ0eXAiOiJKV1QiLCJyZWdEYXRlIjoxNjUzMDEwODEzOTExLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NTMwMTQ0MTMsInN1YiI6ImFjY2Vzcy10b2tlbiIsImlkIjoic3NhZnkifQ.xaX2fFLc4f1pvgSUCvcmDBgV9exC6MmDPryoy2BJxG0
-[2m2022-05-20 10:40:13.925[0;39m [32m INFO[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-8][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 사용 가능한 토큰!!!
-[2m2022-05-20 10:56:33.392[0;39m [32mDEBUG[0;39m [35m37052[0;39m [2m---[0;39m [2m[io-9999-exec-10][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 로그인 토큰정보 : eyJ0eXAiOiJKV1QiLCJyZWdEYXRlIjoxNjUzMDExNzkzMzkyLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NTMwMTUzOTMsInN1YiI6ImFjY2Vzcy10b2tlbiIsImlkIjoic3NhZnkifQ.aCXsowsyIBSgrN5SJFluja4u1gPtjVYAkZyvIN8oBIg
-[2m2022-05-20 10:56:33.407[0;39m [32m INFO[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 사용 가능한 토큰!!!
-[2m2022-05-20 10:56:47.601[0;39m [32mDEBUG[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
-[2m2022-05-20 10:56:52.376[0;39m [32mDEBUG[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-3][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 로그인 토큰정보 : eyJ0eXAiOiJKV1QiLCJyZWdEYXRlIjoxNjUzMDExODEyMzc2LCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NTMwMTU0MTIsInN1YiI6ImFjY2Vzcy10b2tlbiIsImlkIjoic3NhZnkifQ.OqkvTb1M7dldDq5Tyf6bYZqdZh_pIWx8UQXIMElejpc
-[2m2022-05-20 10:56:52.388[0;39m [32m INFO[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-4][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 사용 가능한 토큰!!!
-[2m2022-05-20 10:56:54.878[0;39m [32mDEBUG[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-5][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
-[2m2022-05-20 10:58:54.872[0;39m [32mDEBUG[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-7][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
-[2m2022-05-20 10:59:20.286[0;39m [32mDEBUG[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-8][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
-[2m2022-05-20 11:02:33.337[0;39m [32mDEBUG[0;39m [35m37052[0;39m [2m---[0;39m [2m[io-9999-exec-10][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
-[2m2022-05-20 11:02:45.167[0;39m [32mDEBUG[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
-[2m2022-05-20 11:02:59.039[0;39m [32mDEBUG[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
-[2m2022-05-20 11:03:02.604[0;39m [32mDEBUG[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-3][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 로그인 토큰정보 : eyJ0eXAiOiJKV1QiLCJyZWdEYXRlIjoxNjUzMDEyMTgyNjAzLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NTMwMTU3ODIsInN1YiI6ImFjY2Vzcy10b2tlbiIsImlkIjoic3NhZnkifQ.VeL1jHuhOC7IjLhar9iVemk3jpUS3fslBRwhn4W2bE8
-[2m2022-05-20 11:03:02.612[0;39m [32m INFO[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-4][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 사용 가능한 토큰!!!
-[2m2022-05-20 11:03:05.185[0;39m [32mDEBUG[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-5][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
-[2m2022-05-20 11:03:09.566[0;39m [32mDEBUG[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-7][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m writeBoard - 호출
-[2m2022-05-20 11:03:10.717[0;39m [32mDEBUG[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-8][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
-[2m2022-05-20 11:03:12.839[0;39m [32mDEBUG[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-9][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
-[2m2022-05-20 11:03:16.959[0;39m [32mDEBUG[0;39m [35m37052[0;39m [2m---[0;39m [2m[io-9999-exec-10][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 로그인 토큰정보 : eyJ0eXAiOiJKV1QiLCJyZWdEYXRlIjoxNjUzMDEyMTk2OTU5LCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NTMwMTU3OTYsInN1YiI6ImFjY2Vzcy10b2tlbiIsImlkIjoic3NhZnkifQ.bXzJkki3Bvwm02BjCpcu0_TH63I2xTUb6FNHAZe2bXc
-[2m2022-05-20 11:03:16.969[0;39m [32m INFO[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 사용 가능한 토큰!!!
-[2m2022-05-20 11:03:23.658[0;39m [32mDEBUG[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-3][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
-[2m2022-05-20 11:03:26.536[0;39m [32mDEBUG[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-4][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
-[2m2022-05-20 11:03:28.126[0;39m [32mDEBUG[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-6][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m deleteBoard - 호출
-[2m2022-05-20 11:03:28.156[0;39m [32mDEBUG[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-7][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
-[2m2022-05-20 11:06:30.180[0;39m [32mDEBUG[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-9][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
-[2m2022-05-20 11:06:31.312[0;39m [32mDEBUG[0;39m [35m37052[0;39m [2m---[0;39m [2m[io-9999-exec-10][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
-[2m2022-05-20 11:06:46.060[0;39m [32mDEBUG[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
-[2m2022-05-20 11:06:57.500[0;39m [32mDEBUG[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
-[2m2022-05-20 11:08:57.999[0;39m [32mDEBUG[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-4][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
-[2m2022-05-20 12:37:53.045[0;39m [32mDEBUG[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-6][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
-[2m2022-05-20 12:37:54.493[0;39m [32mDEBUG[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-7][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
-[2m2022-05-20 12:37:56.836[0;39m [32mDEBUG[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-8][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
-[2m2022-05-20 12:44:31.840[0;39m [32mDEBUG[0;39m [35m37052[0;39m [2m---[0;39m [2m[io-9999-exec-10][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
-[2m2022-05-20 13:25:56.248[0;39m [32mDEBUG[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
-[2m2022-05-20 13:25:58.045[0;39m [32mDEBUG[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-3][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
-[2m2022-05-20 13:26:01.095[0;39m [32mDEBUG[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-4][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
-[2m2022-05-20 13:26:08.113[0;39m [32mDEBUG[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-6][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
-[2m2022-05-20 13:26:08.946[0;39m [32mDEBUG[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-7][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
-[2m2022-05-20 13:26:10.109[0;39m [32mDEBUG[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-8][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
-[2m2022-05-20 14:08:39.978[0;39m [32m INFO[0;39m [35m37052[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 9999 (http)
-[2m2022-05-20 14:08:40.038[0;39m [32m INFO[0;39m [35m37052[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 538 ms
-[2m2022-05-20 14:08:40.212[0;39m [32m INFO[0;39m [35m37052[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.d.a.OptionalLiveReloadServer      [0;39m [2m:[0;39m LiveReload server is running on port 35729
-[2m2022-05-20 14:08:40.259[0;39m [32m INFO[0;39m [35m37052[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat started on port(s): 9999 (http) with context path '/vue'
-[2m2022-05-20 14:08:40.347[0;39m [32m INFO[0;39m [35m37052[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.ConditionEvaluationDeltaLoggingListener[0;39m [2m:[0;39m Condition evaluation unchanged
-[2m2022-05-20 14:09:17.262[0;39m [32m INFO[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Initializing Servlet 'dispatcherServlet'
-[2m2022-05-20 14:09:17.264[0;39m [32m INFO[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Completed initialization in 1 ms
-[2m2022-05-20 14:11:54.046[0;39m [33m WARN[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-4][0;39m [36m.w.s.m.s.DefaultHandlerExceptionResolver[0;39m [2m:[0;39m Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<java.lang.String> com.ssafy.vue.controller.MemberController.regist(com.ssafy.vue.dto.MemberDto) throws java.lang.Exception]
-[2m2022-05-20 14:17:01.507[0;39m [33m WARN[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-8][0;39m [36m.w.s.m.s.DefaultHandlerExceptionResolver[0;39m [2m:[0;39m Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<java.lang.String> com.ssafy.vue.controller.MemberController.regist(com.ssafy.vue.dto.MemberDto) throws java.lang.Exception]
-[2m2022-05-20 14:17:01.561[0;39m [31mERROR[0;39m [35m37052[0;39m [2m---[0;39m [2m[io-9999-exec-10][0;39m [36mo.a.c.c.C.[.[.[.[dispatcherServlet]     [0;39m [2m:[0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [/vue] threw exception [Request processing failed; nested exception is org.springframework.dao.DuplicateKeyException: 
-### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'ssafy' for key 'user.PRIMARY'
-### The error may exist in file [C:\SSAFY\workspace\FinalHappyHouse\6\happyhouse-API\target\classes\mappers\member.xml]
-### The error may involve com.ssafy.vue.mapper.MemberMapper.registerMember-Inline
-### The error occurred while setting parameters
-### SQL: insert into user (id, name, password, email, joindate)   values (?, ?, ?, ?, now())
-### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'ssafy' for key 'user.PRIMARY'
-; Duplicate entry 'ssafy' for key 'user.PRIMARY'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'ssafy' for key 'user.PRIMARY'] with root cause
-
-java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'ssafy' for key 'user.PRIMARY'
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:371)
-	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
-	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
-	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
-	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
-	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
-	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
-	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:194)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:181)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
-	at com.sun.proxy.$Proxy81.insert(Unknown Source)
-	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:272)
-	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
-	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:145)
-	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
-	at com.sun.proxy.$Proxy110.registerMember(Unknown Source)
-	at com.ssafy.vue.service.MemberServiceImpl.registerMember(MemberServiceImpl.java:34)
-	at com.ssafy.vue.controller.MemberController.regist(MemberController.java:122)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.lang.Thread.run(Thread.java:748)
-
-[2m2022-05-20 14:21:18.939[0;39m [31mERROR[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-3][0;39m [36mo.a.c.c.C.[.[.[.[dispatcherServlet]     [0;39m [2m:[0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [/vue] threw exception [Request processing failed; nested exception is org.springframework.dao.DuplicateKeyException: 
-### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'ssafy' for key 'user.PRIMARY'
-### The error may exist in file [C:\SSAFY\workspace\FinalHappyHouse\6\happyhouse-API\target\classes\mappers\member.xml]
-### The error may involve com.ssafy.vue.mapper.MemberMapper.registerMember-Inline
-### The error occurred while setting parameters
-### SQL: insert into user (id, name, password, email, joindate)   values (?, ?, ?, ?, now())
-### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'ssafy' for key 'user.PRIMARY'
-; Duplicate entry 'ssafy' for key 'user.PRIMARY'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'ssafy' for key 'user.PRIMARY'] with root cause
-
-java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'ssafy' for key 'user.PRIMARY'
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:371)
-	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
-	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
-	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
-	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
-	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
-	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
-	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:194)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:181)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
-	at com.sun.proxy.$Proxy81.insert(Unknown Source)
-	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:272)
-	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
-	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:145)
-	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
-	at com.sun.proxy.$Proxy110.registerMember(Unknown Source)
-	at com.ssafy.vue.service.MemberServiceImpl.registerMember(MemberServiceImpl.java:34)
-	at com.ssafy.vue.controller.MemberController.regist(MemberController.java:122)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.lang.Thread.run(Thread.java:748)
-
-[2m2022-05-20 14:21:20.064[0;39m [31mERROR[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-6][0;39m [36mo.a.c.c.C.[.[.[.[dispatcherServlet]     [0;39m [2m:[0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [/vue] threw exception [Request processing failed; nested exception is org.springframework.dao.DuplicateKeyException: 
-### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'ssafy' for key 'user.PRIMARY'
-### The error may exist in file [C:\SSAFY\workspace\FinalHappyHouse\6\happyhouse-API\target\classes\mappers\member.xml]
-### The error may involve com.ssafy.vue.mapper.MemberMapper.registerMember-Inline
-### The error occurred while setting parameters
-### SQL: insert into user (id, name, password, email, joindate)   values (?, ?, ?, ?, now())
-### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'ssafy' for key 'user.PRIMARY'
-; Duplicate entry 'ssafy' for key 'user.PRIMARY'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'ssafy' for key 'user.PRIMARY'] with root cause
-
-java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'ssafy' for key 'user.PRIMARY'
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:371)
-	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
-	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
-	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
-	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
-	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
-	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
-	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:194)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:181)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
-	at com.sun.proxy.$Proxy81.insert(Unknown Source)
-	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:272)
-	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
-	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:145)
-	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
-	at com.sun.proxy.$Proxy110.registerMember(Unknown Source)
-	at com.ssafy.vue.service.MemberServiceImpl.registerMember(MemberServiceImpl.java:34)
-	at com.ssafy.vue.controller.MemberController.regist(MemberController.java:122)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.lang.Thread.run(Thread.java:748)
-
-[2m2022-05-20 14:21:20.458[0;39m [31mERROR[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-9][0;39m [36mo.a.c.c.C.[.[.[.[dispatcherServlet]     [0;39m [2m:[0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [/vue] threw exception [Request processing failed; nested exception is org.springframework.dao.DuplicateKeyException: 
-### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'ssafy' for key 'user.PRIMARY'
-### The error may exist in file [C:\SSAFY\workspace\FinalHappyHouse\6\happyhouse-API\target\classes\mappers\member.xml]
-### The error may involve com.ssafy.vue.mapper.MemberMapper.registerMember-Inline
-### The error occurred while setting parameters
-### SQL: insert into user (id, name, password, email, joindate)   values (?, ?, ?, ?, now())
-### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'ssafy' for key 'user.PRIMARY'
-; Duplicate entry 'ssafy' for key 'user.PRIMARY'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'ssafy' for key 'user.PRIMARY'] with root cause
-
-java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'ssafy' for key 'user.PRIMARY'
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:371)
-	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
-	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
-	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
-	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
-	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
-	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
-	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:194)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:181)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
-	at com.sun.proxy.$Proxy81.insert(Unknown Source)
-	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:272)
-	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
-	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:145)
-	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
-	at com.sun.proxy.$Proxy110.registerMember(Unknown Source)
-	at com.ssafy.vue.service.MemberServiceImpl.registerMember(MemberServiceImpl.java:34)
-	at com.ssafy.vue.controller.MemberController.regist(MemberController.java:122)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.lang.Thread.run(Thread.java:748)
-
-[2m2022-05-20 14:25:42.025[0;39m [32m INFO[0;39m [35m37052[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 9999 (http)
-[2m2022-05-20 14:25:42.089[0;39m [32m INFO[0;39m [35m37052[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 500 ms
-[2m2022-05-20 14:25:42.258[0;39m [32m INFO[0;39m [35m37052[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.d.a.OptionalLiveReloadServer      [0;39m [2m:[0;39m LiveReload server is running on port 35729
-[2m2022-05-20 14:25:42.297[0;39m [32m INFO[0;39m [35m37052[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat started on port(s): 9999 (http) with context path '/vue'
-[2m2022-05-20 14:25:42.372[0;39m [32m INFO[0;39m [35m37052[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.ConditionEvaluationDeltaLoggingListener[0;39m [2m:[0;39m Condition evaluation unchanged
-[2m2022-05-20 14:25:52.378[0;39m [32m INFO[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Initializing Servlet 'dispatcherServlet'
-[2m2022-05-20 14:25:52.380[0;39m [32m INFO[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Completed initialization in 1 ms
-[2m2022-05-20 14:37:20.149[0;39m [32mDEBUG[0;39m [35m37052[0;39m [2m---[0;39m [2m[io-9999-exec-10][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
-[2m2022-05-20 14:37:24.530[0;39m [32mDEBUG[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 로그인 토큰정보 : eyJ0eXAiOiJKV1QiLCJyZWdEYXRlIjoxNjUzMDI1MDQ0NTMwLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NTMwMjg2NDQsInN1YiI6ImFjY2Vzcy10b2tlbiIsImlkIjoic3NhZnkifQ.9gwYf1togZp-JjFNNpPg85N3VPhW7FblmJLJ7nhmb2o
-[2m2022-05-20 14:37:24.545[0;39m [32m INFO[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-4][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 사용 가능한 토큰!!!
-[2m2022-05-20 14:37:27.739[0;39m [32mDEBUG[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-5][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
-[2m2022-05-20 14:37:29.832[0;39m [32mDEBUG[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-6][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
-[2m2022-05-20 14:41:49.943[0;39m [32mDEBUG[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-9][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
-[2m2022-05-20 14:42:06.012[0;39m [32mDEBUG[0;39m [35m37052[0;39m [2m---[0;39m [2m[io-9999-exec-10][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 로그인 토큰정보 : eyJ0eXAiOiJKV1QiLCJyZWdEYXRlIjoxNjUzMDI1MzI2MDEyLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NTMwMjg5MjYsInN1YiI6ImFjY2Vzcy10b2tlbiIsImlkIjoiYXNkZiJ9.BqYpfc4xYDhceKcoiilVx1O3ABQ5BR-E417BPNFMJ7c
-[2m2022-05-20 14:42:06.028[0;39m [32m INFO[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 사용 가능한 토큰!!!
-[2m2022-05-20 14:42:13.957[0;39m [32mDEBUG[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-5][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
-[2m2022-05-20 14:57:33.851[0;39m [32mDEBUG[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-7][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
-[2m2022-05-20 14:57:40.604[0;39m [32mDEBUG[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-8][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
-[2m2022-05-20 15:00:33.744[0;39m [32mDEBUG[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-9][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 로그인 토큰정보 : eyJ0eXAiOiJKV1QiLCJyZWdEYXRlIjoxNjUzMDI2NDMzNzQ0LCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NTMwMzAwMzMsInN1YiI6ImFjY2Vzcy10b2tlbiIsImlkIjoicXdlciJ9.OrPcRU9_hQhFoH9HbXyve2lxYCUtzNJLv0CrtEs7A-o
-[2m2022-05-20 15:00:33.754[0;39m [32m INFO[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 사용 가능한 토큰!!!
-[2m2022-05-20 15:04:31.721[0;39m [32mDEBUG[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-5][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
-[2m2022-05-20 15:04:43.073[0;39m [32mDEBUG[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-7][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
-[2m2022-05-20 15:04:48.757[0;39m [32mDEBUG[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-9][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
-[2m2022-05-20 15:05:24.572[0;39m [32mDEBUG[0;39m [35m37052[0;39m [2m---[0;39m [2m[io-9999-exec-10][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
-[2m2022-05-20 15:05:40.071[0;39m [32mDEBUG[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 로그인 토큰정보 : eyJ0eXAiOiJKV1QiLCJyZWdEYXRlIjoxNjUzMDI2NzQwMDcwLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NTMwMzAzNDAsInN1YiI6ImFjY2Vzcy10b2tlbiIsImlkIjoienhjdiJ9.ePNYc_3l50zuKpqs1-4SDGsGCXKOJWYR7QGdfP4QG7Q
-[2m2022-05-20 15:05:40.079[0;39m [32m INFO[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-3][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 사용 가능한 토큰!!!
-[2m2022-05-20 15:22:04.233[0;39m [32mDEBUG[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-5][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 로그인 토큰정보 : eyJ0eXAiOiJKV1QiLCJyZWdEYXRlIjoxNjUzMDI3NzI0MjMzLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NTMwMzEzMjQsInN1YiI6ImFjY2Vzcy10b2tlbiIsImlkIjoienhjdiJ9.zT-V-YsCVSsOg1itcr72iKzV9JmgG6keLE287HfsIvM
-[2m2022-05-20 15:22:04.242[0;39m [32m INFO[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-6][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 사용 가능한 토큰!!!
-[2m2022-05-20 15:24:24.636[0;39m [32mDEBUG[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-8][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 로그인 토큰정보 : eyJ0eXAiOiJKV1QiLCJyZWdEYXRlIjoxNjUzMDI3ODY0NjM2LCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NTMwMzE0NjQsInN1YiI6ImFjY2Vzcy10b2tlbiIsImlkIjoienhjdiJ9.oLazbkvuJhZVOMt8QUmEx7uhz27QXfKu9mv92Gg2fnI
-[2m2022-05-20 15:24:24.645[0;39m [32m INFO[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-9][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 사용 가능한 토큰!!!
-[2m2022-05-20 15:29:01.076[0;39m [32mDEBUG[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-4][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 로그인 토큰정보 : eyJ0eXAiOiJKV1QiLCJyZWdEYXRlIjoxNjUzMDI4MTQxMDc2LCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NTMwMzE3NDEsInN1YiI6ImFjY2Vzcy10b2tlbiIsImlkIjoicXdlciJ9.BJzs7PcYdd-qbfFwBTLmK9siDzb6R8WbhAB8eqQ3iqE
-[2m2022-05-20 15:29:01.091[0;39m [32m INFO[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-5][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 사용 가능한 토큰!!!
-[2m2022-05-20 15:29:45.708[0;39m [32mDEBUG[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-9][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 로그인 토큰정보 : eyJ0eXAiOiJKV1QiLCJyZWdEYXRlIjoxNjUzMDI4MTg1NzA4LCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NTMwMzE3ODUsInN1YiI6ImFjY2Vzcy10b2tlbiIsImlkIjoiYXNkZmFzZGYifQ.JBKCe3iakQgeC6Iqp_8OU78SXwj1ULKG1CpReIMJ8Tg
-[2m2022-05-20 15:29:45.731[0;39m [32m INFO[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 사용 가능한 토큰!!!
-[2m2022-05-20 16:06:34.184[0;39m [32mDEBUG[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-5][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 로그인 토큰정보 : eyJ0eXAiOiJKV1QiLCJyZWdEYXRlIjoxNjUzMDMwMzk0MTg0LCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NTMwMzM5OTQsInN1YiI6ImFjY2Vzcy10b2tlbiIsImlkIjoiYXNkZiJ9.sYnkzCxZqFivSggYAAl1x1Wp-pRTMf4gege78Bdtrzo
-[2m2022-05-20 16:06:34.193[0;39m [32m INFO[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-6][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 사용 가능한 토큰!!!
-[2m2022-05-20 16:14:20.878[0;39m [32mDEBUG[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-8][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
-[2m2022-05-20 16:14:21.872[0;39m [32mDEBUG[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-9][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
-[2m2022-05-20 16:14:23.299[0;39m [32mDEBUG[0;39m [35m37052[0;39m [2m---[0;39m [2m[io-9999-exec-10][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
-[2m2022-05-20 16:20:18.722[0;39m [32m INFO[0;39m [35m37052[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 9999 (http)
-[2m2022-05-20 16:20:18.773[0;39m [32m INFO[0;39m [35m37052[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 477 ms
-[2m2022-05-20 16:20:18.944[0;39m [32m INFO[0;39m [35m37052[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.d.a.OptionalLiveReloadServer      [0;39m [2m:[0;39m LiveReload server is running on port 35729
-[2m2022-05-20 16:20:18.989[0;39m [32m INFO[0;39m [35m37052[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat started on port(s): 9999 (http) with context path '/vue'
-[2m2022-05-20 16:20:19.067[0;39m [32m INFO[0;39m [35m37052[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.ConditionEvaluationDeltaLoggingListener[0;39m [2m:[0;39m Condition evaluation unchanged
-[2m2022-05-20 16:20:38.471[0;39m [32m INFO[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Initializing Servlet 'dispatcherServlet'
-[2m2022-05-20 16:20:38.472[0;39m [32m INFO[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Completed initialization in 1 ms
-[2m2022-05-20 16:21:12.945[0;39m [32mDEBUG[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-3][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 로그인 토큰정보 : eyJ0eXAiOiJKV1QiLCJyZWdEYXRlIjoxNjUzMDMxMjcyOTQ1LCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NTMwMzQ4NzIsInN1YiI6ImFjY2Vzcy10b2tlbiIsImlkIjoiYXNkZiJ9.Np-47IRFB81whxdVLA89IIRgFwdz2xfAq-eXv9WJ7BA
-[2m2022-05-20 16:21:12.958[0;39m [32m INFO[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-4][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 사용 가능한 토큰!!!
-[2m2022-05-20 16:23:33.433[0;39m [32m INFO[0;39m [35m37052[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 9999 (http)
-[2m2022-05-20 16:23:33.483[0;39m [32m INFO[0;39m [35m37052[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 442 ms
-[2m2022-05-20 16:23:33.612[0;39m [32m INFO[0;39m [35m37052[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.d.a.OptionalLiveReloadServer      [0;39m [2m:[0;39m LiveReload server is running on port 35729
-[2m2022-05-20 16:23:33.652[0;39m [32m INFO[0;39m [35m37052[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat started on port(s): 9999 (http) with context path '/vue'
-[2m2022-05-20 16:23:33.714[0;39m [32m INFO[0;39m [35m37052[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.ConditionEvaluationDeltaLoggingListener[0;39m [2m:[0;39m Condition evaluation unchanged
-[2m2022-05-20 16:23:46.383[0;39m [32m INFO[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Initializing Servlet 'dispatcherServlet'
-[2m2022-05-20 16:23:46.385[0;39m [32m INFO[0;39m [35m37052[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Completed initialization in 1 ms
-[2m2022-05-20 16:24:07.224[0;39m [32m INFO[0;39m [35m39324[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.e.DevToolsPropertyDefaultsPostProcessor[0;39m [2m:[0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-[2m2022-05-20 16:24:07.226[0;39m [32m INFO[0;39m [35m39324[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.e.DevToolsPropertyDefaultsPostProcessor[0;39m [2m:[0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-[2m2022-05-20 16:24:08.428[0;39m [32m INFO[0;39m [35m39324[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 9999 (http)
-[2m2022-05-20 16:24:08.608[0;39m [32m INFO[0;39m [35m39324[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 1381 ms
-[2m2022-05-20 16:24:09.238[0;39m [33m WARN[0;39m [35m39324[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.d.a.OptionalLiveReloadServer      [0;39m [2m:[0;39m Unable to start LiveReload server
-[2m2022-05-20 16:24:09.396[0;39m [33m WARN[0;39m [35m39324[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mConfigServletWebServerApplicationContext[0;39m [2m:[0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 9999 is already in use
-[2m2022-05-20 16:24:09.413[0;39m [32m INFO[0;39m [35m39324[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mConditionEvaluationReportLoggingListener[0;39m [2m:[0;39m 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-[2m2022-05-20 16:24:09.436[0;39m [31mERROR[0;39m [35m39324[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.d.LoggingFailureAnalysisReporter  [0;39m [2m:[0;39m 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Web server failed to start. Port 9999 was already in use.
-
-Action:
-
-Identify and stop the process that's listening on port 9999 or configure this application to listen on another port.
-
-[2m2022-05-20 16:24:16.528[0;39m [32m INFO[0;39m [35m37052[0;39m [2m---[0;39m [2m[(372)-127.0.0.1][0;39m [36minMXBeanRegistrar$SpringApplicationAdmin[0;39m [2m:[0;39m Application shutdown requested.
-[2m2022-05-20 16:24:27.132[0;39m [32m INFO[0;39m [35m11672[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.e.DevToolsPropertyDefaultsPostProcessor[0;39m [2m:[0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-[2m2022-05-20 16:24:27.134[0;39m [32m INFO[0;39m [35m11672[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.e.DevToolsPropertyDefaultsPostProcessor[0;39m [2m:[0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-[2m2022-05-20 16:24:28.256[0;39m [32m INFO[0;39m [35m11672[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 9999 (http)
-[2m2022-05-20 16:24:28.439[0;39m [32m INFO[0;39m [35m11672[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 1304 ms
-[2m2022-05-20 16:24:29.032[0;39m [32m INFO[0;39m [35m11672[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.d.a.OptionalLiveReloadServer      [0;39m [2m:[0;39m LiveReload server is running on port 35729
-[2m2022-05-20 16:24:29.174[0;39m [32m INFO[0;39m [35m11672[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat started on port(s): 9999 (http) with context path '/vue'
-[2m2022-05-20 16:24:32.466[0;39m [32m INFO[0;39m [35m11672[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Initializing Servlet 'dispatcherServlet'
-[2m2022-05-20 16:24:32.467[0;39m [32m INFO[0;39m [35m11672[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Completed initialization in 1 ms
-[2m2022-05-20 16:25:37.124[0;39m [32mDEBUG[0;39m [35m11672[0;39m [2m---[0;39m [2m[nio-9999-exec-3][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 로그인 토큰정보 : eyJ0eXAiOiJKV1QiLCJyZWdEYXRlIjoxNjUzMDMxNTM3MDk1LCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NTMwMzUxMzcsInN1YiI6ImFjY2Vzcy10b2tlbiIsImlkIjoiYXNkZiJ9.q3JHVkJewv4k-CsD_yxfnz3chG4d5ynSrvBdTyXo80s
-[2m2022-05-20 16:25:37.166[0;39m [32m INFO[0;39m [35m11672[0;39m [2m---[0;39m [2m[nio-9999-exec-5][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 사용 가능한 토큰!!!
-[2m2022-05-20 16:29:15.957[0;39m [32mDEBUG[0;39m [35m11672[0;39m [2m---[0;39m [2m[io-9999-exec-10][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 로그인 토큰정보 : eyJ0eXAiOiJKV1QiLCJyZWdEYXRlIjoxNjUzMDMxNzU1OTU2LCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NTMwMzUzNTUsInN1YiI6ImFjY2Vzcy10b2tlbiIsImlkIjoidGVzdCJ9.Yu4_ym1yIoPS4ZWzBkXYGkUfdbumu-tKalXTtzGGyiI
-[2m2022-05-20 16:29:15.977[0;39m [32m INFO[0;39m [35m11672[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 사용 가능한 토큰!!!
-[2m2022-05-20 17:16:16.655[0;39m [32mDEBUG[0;39m [35m11672[0;39m [2m---[0;39m [2m[nio-9999-exec-8][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 로그인 토큰정보 : eyJ0eXAiOiJKV1QiLCJyZWdEYXRlIjoxNjUzMDM0NTc2NjU0LCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NTMwMzgxNzYsInN1YiI6ImFjY2Vzcy10b2tlbiIsImlkIjoidGVzdCJ9.QYMc0pZl9h7Azl0dnvEKBgNayaqDnQK-3kZbs1ZQaGw
-[2m2022-05-20 17:16:16.670[0;39m [32m INFO[0;39m [35m11672[0;39m [2m---[0;39m [2m[nio-9999-exec-9][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 사용 가능한 토큰!!!
-[2m2022-05-20 17:20:15.596[0;39m [32mDEBUG[0;39m [35m11672[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 로그인 토큰정보 : eyJ0eXAiOiJKV1QiLCJyZWdEYXRlIjoxNjUzMDM0ODE1NTk2LCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NTMwMzg0MTUsInN1YiI6ImFjY2Vzcy10b2tlbiIsImlkIjoic3NhZnkifQ.oaDI9sQH8irwLxO1XJW351J1oW2MA5qLtFa_di447_8
-[2m2022-05-20 17:20:15.623[0;39m [32m INFO[0;39m [35m11672[0;39m [2m---[0;39m [2m[nio-9999-exec-3][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 사용 가능한 토큰!!!
-[2m2022-05-20 17:20:53.076[0;39m [32mDEBUG[0;39m [35m11672[0;39m [2m---[0;39m [2m[nio-9999-exec-4][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 로그인 토큰정보 : eyJ0eXAiOiJKV1QiLCJyZWdEYXRlIjoxNjUzMDM0ODUzMDc2LCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NTMwMzg0NTMsInN1YiI6ImFjY2Vzcy10b2tlbiIsImlkIjoic3NhZnkifQ.hfRl3adN--dDdOhN5JhAzTN8R2CmVDOsMHtc5rXkBFg
-[2m2022-05-20 17:20:53.087[0;39m [32m INFO[0;39m [35m11672[0;39m [2m---[0;39m [2m[nio-9999-exec-5][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 사용 가능한 토큰!!!
-[2m2022-05-20 17:21:18.081[0;39m [32mDEBUG[0;39m [35m11672[0;39m [2m---[0;39m [2m[nio-9999-exec-6][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 로그인 토큰정보 : eyJ0eXAiOiJKV1QiLCJyZWdEYXRlIjoxNjUzMDM0ODc4MDgxLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NTMwMzg0NzgsInN1YiI6ImFjY2Vzcy10b2tlbiIsImlkIjoic3NhZnkifQ.tAvB1FMxUiBtPvv3BGULCut1P9NMjJST0VHPZZvjX-s
-[2m2022-05-20 17:21:18.091[0;39m [32m INFO[0;39m [35m11672[0;39m [2m---[0;39m [2m[nio-9999-exec-7][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 사용 가능한 토큰!!!
-[2m2022-05-20 17:21:56.048[0;39m [32mDEBUG[0;39m [35m11672[0;39m [2m---[0;39m [2m[nio-9999-exec-8][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 로그인 토큰정보 : eyJ0eXAiOiJKV1QiLCJyZWdEYXRlIjoxNjUzMDM0OTE2MDQ4LCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NTMwMzg1MTYsInN1YiI6ImFjY2Vzcy10b2tlbiIsImlkIjoic3NhZnkifQ.mnCS-g0_ObBBZI3BIgst1SaQF0FVD-fA0cyTuy-aeBg
-[2m2022-05-20 17:21:56.058[0;39m [32m INFO[0;39m [35m11672[0;39m [2m---[0;39m [2m[nio-9999-exec-9][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 사용 가능한 토큰!!!
-[2m2022-05-20 17:54:14.096[0;39m [32m INFO[0;39m [35m11672[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 9999 (http)
-[2m2022-05-20 17:54:14.163[0;39m [32m INFO[0;39m [35m11672[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 533 ms
-[2m2022-05-20 17:54:14.356[0;39m [32m INFO[0;39m [35m11672[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.d.a.OptionalLiveReloadServer      [0;39m [2m:[0;39m LiveReload server is running on port 35729
-[2m2022-05-20 17:54:14.411[0;39m [32m INFO[0;39m [35m11672[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat started on port(s): 9999 (http) with context path '/vue'
-[2m2022-05-20 17:54:14.505[0;39m [32m INFO[0;39m [35m11672[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.ConditionEvaluationDeltaLoggingListener[0;39m [2m:[0;39m Condition evaluation unchanged
-[2m2022-05-20 17:54:24.719[0;39m [32m INFO[0;39m [35m11672[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 9999 (http)
-[2m2022-05-20 17:54:24.779[0;39m [32m INFO[0;39m [35m11672[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 461 ms
-[2m2022-05-20 17:54:24.925[0;39m [32m INFO[0;39m [35m11672[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.d.a.OptionalLiveReloadServer      [0;39m [2m:[0;39m LiveReload server is running on port 35729
-[2m2022-05-20 17:54:24.969[0;39m [32m INFO[0;39m [35m11672[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat started on port(s): 9999 (http) with context path '/vue'
-[2m2022-05-20 17:54:25.047[0;39m [32m INFO[0;39m [35m11672[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.ConditionEvaluationDeltaLoggingListener[0;39m [2m:[0;39m Condition evaluation unchanged
-[2m2022-05-20 18:02:46.916[0;39m [32m INFO[0;39m [35m11672[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 9999 (http)
-[2m2022-05-20 18:02:46.966[0;39m [32m INFO[0;39m [35m11672[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 489 ms
-[2m2022-05-20 18:02:47.106[0;39m [32m INFO[0;39m [35m11672[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.d.a.OptionalLiveReloadServer      [0;39m [2m:[0;39m LiveReload server is running on port 35729
-[2m2022-05-20 18:02:47.153[0;39m [32m INFO[0;39m [35m11672[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat started on port(s): 9999 (http) with context path '/vue'
-[2m2022-05-20 18:02:47.218[0;39m [32m INFO[0;39m [35m11672[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.ConditionEvaluationDeltaLoggingListener[0;39m [2m:[0;39m Condition evaluation unchanged
-[2m2022-05-20 18:03:00.349[0;39m [32m INFO[0;39m [35m11672[0;39m [2m---[0;39m [2m[(112)-127.0.0.1][0;39m [36minMXBeanRegistrar$SpringApplicationAdmin[0;39m [2m:[0;39m Application shutdown requested.
-[2m2022-05-20 18:03:06.072[0;39m [32m INFO[0;39m [35m13836[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.e.DevToolsPropertyDefaultsPostProcessor[0;39m [2m:[0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-[2m2022-05-20 18:03:06.074[0;39m [32m INFO[0;39m [35m13836[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.e.DevToolsPropertyDefaultsPostProcessor[0;39m [2m:[0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-[2m2022-05-20 18:03:07.294[0;39m [32m INFO[0;39m [35m13836[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 9999 (http)
-[2m2022-05-20 18:03:07.529[0;39m [32m INFO[0;39m [35m13836[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 1454 ms
-[2m2022-05-20 18:03:08.238[0;39m [32m INFO[0;39m [35m13836[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.d.a.OptionalLiveReloadServer      [0;39m [2m:[0;39m LiveReload server is running on port 35729
-[2m2022-05-20 18:03:08.403[0;39m [32m INFO[0;39m [35m13836[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat started on port(s): 9999 (http) with context path '/vue'
-[2m2022-05-20 18:03:19.680[0;39m [32m INFO[0;39m [35m13836[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Initializing Servlet 'dispatcherServlet'
-[2m2022-05-20 18:03:19.682[0;39m [32m INFO[0;39m [35m13836[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Completed initialization in 1 ms
-[2m2022-05-20 18:03:23.246[0;39m [32mDEBUG[0;39m [35m13836[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 로그인 토큰정보 : eyJ0eXAiOiJKV1QiLCJyZWdEYXRlIjoxNjUzMDM3NDAzMjIyLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NTMwNDEwMDMsInN1YiI6ImFjY2Vzcy10b2tlbiIsImlkIjoic3NhZnkifQ.5mmpvM0IicPdA8Tbc4LABSFXi1J_0CnFqmRmQcOKulE
-[2m2022-05-20 18:03:23.299[0;39m [32m INFO[0;39m [35m13836[0;39m [2m---[0;39m [2m[nio-9999-exec-3][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 사용 가능한 토큰!!!
-[2m2022-05-20 18:04:33.753[0;39m [32mDEBUG[0;39m [35m13836[0;39m [2m---[0;39m [2m[nio-9999-exec-6][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 로그인 토큰정보 : eyJ0eXAiOiJKV1QiLCJyZWdEYXRlIjoxNjUzMDM3NDczNzUyLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NTMwNDEwNzMsInN1YiI6ImFjY2Vzcy10b2tlbiIsImlkIjoic3NhZnkifQ.NB3vHtOxazZFiRpsIQ_gdAtzp-VFU5wBoGqnRNp3YGo
-[2m2022-05-20 18:04:33.771[0;39m [32m INFO[0;39m [35m13836[0;39m [2m---[0;39m [2m[nio-9999-exec-7][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 사용 가능한 토큰!!!
-[2m2022-05-20 18:05:16.857[0;39m [32mDEBUG[0;39m [35m13836[0;39m [2m---[0;39m [2m[nio-9999-exec-9][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
-[2m2022-05-20 18:05:18.252[0;39m [32mDEBUG[0;39m [35m13836[0;39m [2m---[0;39m [2m[io-9999-exec-10][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
-[2m2022-05-20 18:05:19.066[0;39m [32mDEBUG[0;39m [35m13836[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
-[2m2022-05-20 18:10:42.874[0;39m [32mDEBUG[0;39m [35m13836[0;39m [2m---[0;39m [2m[nio-9999-exec-3][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 로그인 토큰정보 : eyJ0eXAiOiJKV1QiLCJyZWdEYXRlIjoxNjUzMDM3ODQyODc0LCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NTMwNDE0NDIsInN1YiI6ImFjY2Vzcy10b2tlbiIsImlkIjoic3NhZnkifQ.oC7dmRsdOWrUkWi0FKVVobVp8uEvAg9Dv3kT_oKqFe0
-[2m2022-05-20 18:10:42.886[0;39m [32m INFO[0;39m [35m13836[0;39m [2m---[0;39m [2m[nio-9999-exec-4][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 사용 가능한 토큰!!!
-[2m2022-05-20 18:36:46.100[0;39m [32mDEBUG[0;39m [35m13836[0;39m [2m---[0;39m [2m[nio-9999-exec-6][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 로그인 토큰정보 : eyJ0eXAiOiJKV1QiLCJyZWdEYXRlIjoxNjUzMDM5NDA2MTAwLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NTMwNDMwMDYsInN1YiI6ImFjY2Vzcy10b2tlbiIsImlkIjoic3NhZnkifQ.eJDt27Lsoj-b6xHLDfaRxHPw8h8FquzEF3Gmm290lWg
-[2m2022-05-20 18:36:46.110[0;39m [32m INFO[0;39m [35m13836[0;39m [2m---[0;39m [2m[nio-9999-exec-7][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 사용 가능한 토큰!!!
-[2m2022-05-20 18:37:15.152[0;39m [32mDEBUG[0;39m [35m13836[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
-[2m2022-05-20 18:37:17.629[0;39m [32mDEBUG[0;39m [35m13836[0;39m [2m---[0;39m [2m[nio-9999-exec-3][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
-[2m2022-05-20 18:37:18.787[0;39m [32mDEBUG[0;39m [35m13836[0;39m [2m---[0;39m [2m[nio-9999-exec-4][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
-[2m2022-05-20 18:38:18.571[0;39m [32mDEBUG[0;39m [35m13836[0;39m [2m---[0;39m [2m[nio-9999-exec-7][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
-[2m2022-05-20 18:38:20.681[0;39m [32mDEBUG[0;39m [35m13836[0;39m [2m---[0;39m [2m[nio-9999-exec-8][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
-[2m2022-05-20 18:38:21.345[0;39m [32mDEBUG[0;39m [35m13836[0;39m [2m---[0;39m [2m[nio-9999-exec-9][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
-[2m2022-05-20 18:38:22.527[0;39m [32mDEBUG[0;39m [35m13836[0;39m [2m---[0;39m [2m[io-9999-exec-10][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
-[2m2022-05-20 18:38:24.478[0;39m [32mDEBUG[0;39m [35m13836[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
-[2m2022-05-20 18:43:46.320[0;39m [32m INFO[0;39m [35m13836[0;39m [2m---[0;39m [2m[n(50)-127.0.0.1][0;39m [36minMXBeanRegistrar$SpringApplicationAdmin[0;39m [2m:[0;39m Application shutdown requested.
+[2m2022-05-22 10:24:24.997[0;39m [32m INFO[0;39m [35m16268[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.e.DevToolsPropertyDefaultsPostProcessor[0;39m [2m:[0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2m2022-05-22 10:24:25.002[0;39m [32m INFO[0;39m [35m16268[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.e.DevToolsPropertyDefaultsPostProcessor[0;39m [2m:[0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2m2022-05-22 10:24:26.440[0;39m [32m INFO[0;39m [35m16268[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 9999 (http)
+[2m2022-05-22 10:24:26.677[0;39m [32m INFO[0;39m [35m16268[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 1674 ms
+[2m2022-05-22 10:24:27.439[0;39m [32m INFO[0;39m [35m16268[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.d.a.OptionalLiveReloadServer      [0;39m [2m:[0;39m LiveReload server is running on port 35729
+[2m2022-05-22 10:24:27.620[0;39m [32m INFO[0;39m [35m16268[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat started on port(s): 9999 (http) with context path '/vue'
+[2m2022-05-22 10:26:57.781[0;39m [32m INFO[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Initializing Servlet 'dispatcherServlet'
+[2m2022-05-22 10:26:57.782[0;39m [32m INFO[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Completed initialization in 1 ms
+[2m2022-05-22 10:27:00.242[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 로그인 토큰정보 : eyJ0eXAiOiJKV1QiLCJyZWdEYXRlIjoxNjUzMTgyODIwMjIwLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NTMxODY0MjAsInN1YiI6ImFjY2Vzcy10b2tlbiIsImlkIjoic3NhZnkifQ.50FBW-zvAAvdiC8_4sUHWnontS7zRN4YauMqvFQnpuY
+[2m2022-05-22 10:27:00.303[0;39m [32m INFO[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-5][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 사용 가능한 토큰!!!
+[2m2022-05-22 10:27:20.881[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
+[2m2022-05-22 10:27:22.870[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-3][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
+[2m2022-05-22 10:27:24.051[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
+[2m2022-05-22 10:27:26.308[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-5][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m updateBoard - 호출
+[2m2022-05-22 10:27:27.407[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-6][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
+[2m2022-05-22 10:28:57.590[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-8][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
+[2m2022-05-22 10:28:58.340[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-9][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
+[2m2022-05-22 10:28:59.143[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[io-9999-exec-10][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
+[2m2022-05-22 10:28:59.593[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
+[2m2022-05-22 10:29:00.125[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-3][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
+[2m2022-05-22 10:29:00.552[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
+[2m2022-05-22 10:29:01.199[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-4][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
+[2m2022-05-22 10:29:04.396[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-5][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
+[2m2022-05-22 10:29:05.052[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-6][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
+[2m2022-05-22 10:29:06.500[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-7][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
+[2m2022-05-22 10:29:07.932[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-8][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
+[2m2022-05-22 10:29:08.711[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-9][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
+[2m2022-05-22 10:29:09.149[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[io-9999-exec-10][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
+[2m2022-05-22 10:29:10.375[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
+[2m2022-05-22 10:29:33.984[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-8][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
+[2m2022-05-22 10:29:44.400[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 로그인 토큰정보 : eyJ0eXAiOiJKV1QiLCJyZWdEYXRlIjoxNjUzMTgyOTg0Mzk5LCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NTMxODY1ODQsInN1YiI6ImFjY2Vzcy10b2tlbiIsImlkIjoiYWRtaW4ifQ.zA_1hGjxfUO6ERuAJrWrjiypE3BCyp07X-pKpQCgqRg
+[2m2022-05-22 10:29:44.423[0;39m [32m INFO[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 사용 가능한 토큰!!!
+[2m2022-05-22 10:34:01.839[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-4][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
+[2m2022-05-22 10:34:03.856[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-5][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
+[2m2022-05-22 10:34:09.774[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-6][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 로그인 토큰정보 : eyJ0eXAiOiJKV1QiLCJyZWdEYXRlIjoxNjUzMTgzMjQ5Nzc0LCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NTMxODY4NDksInN1YiI6ImFjY2Vzcy10b2tlbiIsImlkIjoiYWRtaW4ifQ.5jZTry9-FmGN0IumxVzGZiRHNQCcH77ExW4KfU0hQww
+[2m2022-05-22 10:34:09.792[0;39m [32m INFO[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-7][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 사용 가능한 토큰!!!
+[2m2022-05-22 10:34:19.982[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-9][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 로그인 토큰정보 : eyJ0eXAiOiJKV1QiLCJyZWdEYXRlIjoxNjUzMTgzMjU5OTgyLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NTMxODY4NTksInN1YiI6ImFjY2Vzcy10b2tlbiIsImlkIjoic3NhZnkifQ.nOVaU2AlGp1hFGwkVjFd6rgqQXTYnLyNrZdY7jtJfxw
+[2m2022-05-22 10:34:19.998[0;39m [32m INFO[0;39m [35m16268[0;39m [2m---[0;39m [2m[io-9999-exec-10][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 사용 가능한 토큰!!!
+[2m2022-05-22 10:45:10.055[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-9][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 로그인 토큰정보 : eyJ0eXAiOiJKV1QiLCJyZWdEYXRlIjoxNjUzMTgzOTEwMDU1LCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NTMxODc1MTAsInN1YiI6ImFjY2Vzcy10b2tlbiIsImlkIjoiYWRtaW4ifQ.fBqGRccKQMXkuwqUCcTe-hb0JmsvnLJzRHOWrqj0QRI
+[2m2022-05-22 10:45:10.075[0;39m [32m INFO[0;39m [35m16268[0;39m [2m---[0;39m [2m[io-9999-exec-10][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 사용 가능한 토큰!!!
+[2m2022-05-22 10:45:16.401[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
+[2m2022-05-22 10:53:37.047[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-5][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
+[2m2022-05-22 10:53:38.369[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-6][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
+[2m2022-05-22 10:53:39.781[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-7][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
+[2m2022-05-22 10:53:40.591[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-8][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
+[2m2022-05-22 10:53:42.302[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-9][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
+[2m2022-05-22 10:53:43.427[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[io-9999-exec-10][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
+[2m2022-05-22 10:53:44.171[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
+[2m2022-05-22 10:53:51.735[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-3][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 로그인 토큰정보 : eyJ0eXAiOiJKV1QiLCJyZWdEYXRlIjoxNjUzMTg0NDMxNzM1LCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NTMxODgwMzEsInN1YiI6ImFjY2Vzcy10b2tlbiIsImlkIjoic3NhZnkifQ.5QktXHldSBbKU8fVd16CM6bfDnxxA4Cp4zF6wZgsEts
+[2m2022-05-22 10:53:51.755[0;39m [32m INFO[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 사용 가능한 토큰!!!
+[2m2022-05-22 10:53:54.120[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-4][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
+[2m2022-05-22 10:53:55.522[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-5][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
+[2m2022-05-22 10:53:56.638[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-6][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
+[2m2022-05-22 10:53:57.969[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-7][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
+[2m2022-05-22 10:53:58.839[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-8][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
+[2m2022-05-22 10:53:59.795[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-9][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
+[2m2022-05-22 10:54:00.414[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[io-9999-exec-10][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
+[2m2022-05-22 10:54:02.367[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
+[2m2022-05-22 10:54:31.711[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-3][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
+[2m2022-05-22 10:54:31.771[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
+[2m2022-05-22 10:54:34.629[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-4][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
+[2m2022-05-22 10:54:35.673[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-5][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
+[2m2022-05-22 10:55:01.210[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-6][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
+[2m2022-05-22 10:55:15.248[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-7][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
+[2m2022-05-22 10:55:15.321[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-8][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
+[2m2022-05-22 10:55:15.355[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-9][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
+[2m2022-05-22 10:55:18.153[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[io-9999-exec-10][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
+[2m2022-05-22 10:55:23.298[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
+[2m2022-05-22 10:55:45.488[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-3][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
+[2m2022-05-22 10:55:45.522[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
+[2m2022-05-22 10:55:45.553[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-4][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
+[2m2022-05-22 10:55:45.585[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-5][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
+[2m2022-05-22 10:55:45.616[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-6][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
+[2m2022-05-22 10:55:45.660[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-7][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
+[2m2022-05-22 10:55:45.704[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-8][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
+[2m2022-05-22 10:56:11.090[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-9][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
+[2m2022-05-22 10:56:12.611[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[io-9999-exec-10][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
+[2m2022-05-22 10:56:13.426[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
+[2m2022-05-22 10:56:20.985[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-3][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
+[2m2022-05-22 10:56:22.226[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
+[2m2022-05-22 10:56:37.890[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-4][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
+[2m2022-05-22 10:56:39.692[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-5][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
+[2m2022-05-22 10:57:16.994[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-6][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
+[2m2022-05-22 10:57:17.021[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-7][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
+[2m2022-05-22 10:57:17.044[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-8][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
+[2m2022-05-22 10:57:38.797[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-9][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
+[2m2022-05-22 10:57:48.161[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[io-9999-exec-10][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
+[2m2022-05-22 10:57:51.101[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
+[2m2022-05-22 10:57:54.793[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-3][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
+[2m2022-05-22 10:58:27.993[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
+[2m2022-05-22 10:58:43.775[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-4][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
+[2m2022-05-22 11:00:05.049[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-6][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
+[2m2022-05-22 11:00:05.078[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-7][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
+[2m2022-05-22 11:00:37.046[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-8][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
+[2m2022-05-22 11:00:39.858[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-9][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
+[2m2022-05-22 11:00:45.090[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[io-9999-exec-10][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
+[2m2022-05-22 11:00:46.970[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
+[2m2022-05-22 11:00:47.685[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-3][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
+[2m2022-05-22 11:00:48.134[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
+[2m2022-05-22 11:00:48.952[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-4][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
+[2m2022-05-22 11:00:49.454[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-5][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
+[2m2022-05-22 11:00:50.111[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-6][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
+[2m2022-05-22 11:00:50.528[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-7][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
+[2m2022-05-22 11:03:26.777[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-9][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
+[2m2022-05-22 11:05:10.267[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
+[2m2022-05-22 11:05:14.203[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-3][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
+[2m2022-05-22 11:05:43.197[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
+[2m2022-05-22 11:06:00.392[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-4][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
+[2m2022-05-22 11:06:04.832[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-5][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
+[2m2022-05-22 11:07:38.886[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-7][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
+[2m2022-05-22 11:07:41.370[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-8][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
+[2m2022-05-22 11:07:51.595[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-9][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
+[2m2022-05-22 11:07:54.969[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[io-9999-exec-10][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
+[2m2022-05-22 11:07:57.846[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
+[2m2022-05-22 11:07:59.553[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-3][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
+[2m2022-05-22 11:08:00.855[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
+[2m2022-05-22 11:08:01.930[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-4][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
+[2m2022-05-22 11:08:12.162[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-5][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
+[2m2022-05-22 11:08:14.255[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-6][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
+[2m2022-05-22 11:08:14.912[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-7][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
+[2m2022-05-22 11:08:15.752[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-8][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
+[2m2022-05-22 11:08:16.741[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-9][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
+[2m2022-05-22 11:08:41.554[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
+[2m2022-05-22 11:08:42.679[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-4][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m detailBoard - 호출
+[2m2022-05-22 11:08:43.039[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-5][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
+[2m2022-05-22 11:37:51.649[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-8][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
+[2m2022-05-22 11:38:05.056[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[io-9999-exec-10][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 로그인 토큰정보 : eyJ0eXAiOiJKV1QiLCJyZWdEYXRlIjoxNjUzMTg3MDg1MDU2LCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NTMxOTA2ODUsInN1YiI6ImFjY2Vzcy10b2tlbiIsImlkIjoic3NhZnkifQ.JJMWfOTA-NwlI8MCmuATfyTJclSqRMAQfzzQbP7HQTw
+[2m2022-05-22 11:38:05.071[0;39m [32m INFO[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 사용 가능한 토큰!!!
+[2m2022-05-22 11:53:08.386[0;39m [32m INFO[0;39m [35m16268[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 9999 (http)
+[2m2022-05-22 11:53:08.469[0;39m [32m INFO[0;39m [35m16268[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 594 ms
+[2m2022-05-22 11:53:08.647[0;39m [32m INFO[0;39m [35m16268[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.d.a.OptionalLiveReloadServer      [0;39m [2m:[0;39m LiveReload server is running on port 35729
+[2m2022-05-22 11:53:08.699[0;39m [32m INFO[0;39m [35m16268[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat started on port(s): 9999 (http) with context path '/vue'
+[2m2022-05-22 11:53:08.793[0;39m [32m INFO[0;39m [35m16268[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.ConditionEvaluationDeltaLoggingListener[0;39m [2m:[0;39m Condition evaluation unchanged
+[2m2022-05-22 11:54:00.768[0;39m [32m INFO[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Initializing Servlet 'dispatcherServlet'
+[2m2022-05-22 11:54:00.769[0;39m [32m INFO[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Completed initialization in 1 ms
+[2m2022-05-22 11:55:25.315[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-3][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
+[2m2022-05-22 15:08:20.755[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
+[2m2022-05-22 15:08:23.181[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-3][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
+[2m2022-05-22 15:08:34.216[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-6][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
+[2m2022-05-22 15:09:00.499[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-8][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
+[2m2022-05-22 16:07:14.279[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-3][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 로그인 토큰정보 : eyJ0eXAiOiJKV1QiLCJyZWdEYXRlIjoxNjUzMjAzMjM0Mjc4LCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NTMyMDY4MzQsInN1YiI6ImFjY2Vzcy10b2tlbiIsImlkIjoic3NhZnkifQ.GFX7L04mpc78w5lw472QIl19A448D3YPyb-5uSoBfAg
+[2m2022-05-22 16:07:14.308[0;39m [32m INFO[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-5][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 사용 가능한 토큰!!!
+[2m2022-05-22 16:07:44.176[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-8][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 로그인 토큰정보 : eyJ0eXAiOiJKV1QiLCJyZWdEYXRlIjoxNjUzMjAzMjY0MTc2LCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NTMyMDY4NjQsInN1YiI6ImFjY2Vzcy10b2tlbiIsImlkIjoic3NhZnkifQ.Oh5YiGsvRDUk39OQjnfItMrFwHWRCKT_PGfSue_twQ0
+[2m2022-05-22 16:07:44.188[0;39m [32m INFO[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-9][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 사용 가능한 토큰!!!
+[2m2022-05-22 16:12:18.374[0;39m [32mDEBUG[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-6][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 로그인 토큰정보 : eyJ0eXAiOiJKV1QiLCJyZWdEYXRlIjoxNjUzMjAzNTM4MzczLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NTMyMDcxMzgsInN1YiI6ImFjY2Vzcy10b2tlbiIsImlkIjoic3NhZnkifQ.zXLT5Sbt9xoA6yvJ-wdleyh0zjRs50YIIZvabDZz_gk
+[2m2022-05-22 16:12:18.394[0;39m [32m INFO[0;39m [35m16268[0;39m [2m---[0;39m [2m[nio-9999-exec-7][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 사용 가능한 토큰!!!
+[2m2022-05-22 16:26:07.677[0;39m [32m INFO[0;39m [35m16268[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 9999 (http)
+[2m2022-05-22 16:26:07.731[0;39m [32m INFO[0;39m [35m16268[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 496 ms
+[2m2022-05-22 16:26:07.904[0;39m [32m INFO[0;39m [35m16268[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.d.a.OptionalLiveReloadServer      [0;39m [2m:[0;39m LiveReload server is running on port 35729
+[2m2022-05-22 16:26:07.954[0;39m [32m INFO[0;39m [35m16268[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat started on port(s): 9999 (http) with context path '/vue'
+[2m2022-05-22 16:26:08.036[0;39m [32m INFO[0;39m [35m16268[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.ConditionEvaluationDeltaLoggingListener[0;39m [2m:[0;39m Condition evaluation unchanged
