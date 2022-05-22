@@ -40,7 +40,6 @@ export default {
       // console.log("listRow : ", this.house);
       // this.$store.dispatch("getHouse", this.house);
       this.detailHouse(this.house);
-      console.log(this.house);
     },
     colorChange(flag) {
       this.isColor = flag;

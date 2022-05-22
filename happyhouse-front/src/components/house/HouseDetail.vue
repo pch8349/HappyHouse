@@ -14,7 +14,13 @@
         :center="center"
         :zoom="16"
         style="width: 100vw; height: 50vh"
-      ></GmapMap>
+      >
+        <GmapMarker
+          :key="index"
+          v-for="(m, index) in markers"
+          :position="m.position"
+        />
+      </GmapMap>
     </b-row>
     <b-row>
       <b-col>
@@ -67,36 +73,50 @@ export default {
         lat: 37.500131499999995,
         lng: 127.03242579999998,
       },
+      markers: [
+        {
+          position: {
+            lat: 37.500131499999995,
+            lng: 127.03242579999998,
+          },
+        },
+      ],
     };
   },
+  computed: {
+    ...mapState(houseStore, ["house", "sidoname", "gugunname"]),
+  },
+
   methods: {
-    getLocation() {
-      $.ajax({
-        url: `https://maps.googleapis.com/maps/api/geocode/json?address=${$(
-          "#sido option:selected",
-        ).text()}+${$("#gugun option:selected").text()}+${$(
-          "#dong option:selected",
-        ).text()}&key=AIzaSyASKTABus6UEFjZ_wBGW4ZqOMWhA38QCSM&sensor=false`,
+    async getLocation() {
+      let vthis = this; // $ajax에서는 그냥 this 사용 불가
+      await $.ajax({
+        url: `https://maps.googleapis.com/maps/api/geocode/json?address=
+        ${vthis.sidoname} ${vthis.gugunname} ${vthis.house.법정동} ${vthis.house.지번}
+        &key=AIzaSyASKTABus6UEFjZ_wBGW4ZqOMWhA38QCSM&sensor=false`,
         type: "POST",
         async: false,
         success: function (myJSONResult) {
           if (myJSONResult.status == "OK") {
-            this.center = {
+            vthis.center = {
+              lat: myJSONResult.results[0].geometry.location.lat,
+              lng: myJSONResult.results[0].geometry.location.lng,
+            };
+            vthis.markers[0].position = {
               lat: myJSONResult.results[0].geometry.location.lat,
               lng: myJSONResult.results[0].geometry.location.lng,
             };
           } else {
             console.log(myJSONResult);
           }
+          console.log(vthis.house.법정동);
         },
       });
     },
   },
-  computed: {
-    ...mapState(houseStore, ["house", "sidoname", "gugunname"]),
-    // house() {
-    //   return this.$store.state.house;
-    // },
+  beforeUpdate() {
+    // 라이프사이클 시점의 문제!!
+    this.getLocation();
   },
   filters: {
     price(value) {
