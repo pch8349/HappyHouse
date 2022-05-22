@@ -14,7 +14,7 @@
       <b-form-select
         v-model="sidoCode"
         :options="sidos"
-        @change="gugunList"
+        @change="gugunList($event)"
       ></b-form-select>
     </b-col>
     <b-col class="sm-3">
@@ -28,7 +28,7 @@
 </template>
 
 <script>
-import { mapState, mapActions /*, mapMutations*/ } from "vuex";
+import { mapState, mapActions /*, mapMutations */ } from "vuex";
 
 /*
   namespaced: true를 사용했기 때문에 선언해줍니다.
@@ -51,7 +51,13 @@ export default {
     };
   },
   computed: {
-    ...mapState(houseStore, ["sidos", "guguns", "houses"]),
+    ...mapState(houseStore, [
+      "sidos",
+      "guguns",
+      "houses",
+      "sidoname",
+      "gugunname",
+    ]),
     // sidos() {
     //   return this.$store.state.sidos;
     // },
@@ -70,6 +76,8 @@ export default {
       "getHouseList",
       "clearSido",
       "clearGugun",
+      "setSidoName",
+      "setGugunName",
     ]), // houseStore.js에서 acsions에 clearsido, cleargugun 추가
     // ...mapMutations(houseStore, ["CLEAR_SIDO_LIST", "CLEAR_GUGUN_LIST"]), // 이거 지우기
     // sidoList() {
@@ -78,12 +86,22 @@ export default {
     gugunList() {
       // method의 mapaction 호출
       //mutations는 직접호출하지 않음.
-      console.log(this.sidoCode);
+      // console.log(event.target.value);
       this.clearGugun();
       this.gugunCode = null;
       if (this.sidoCode) this.getGugun(this.sidoCode);
     },
     searchApt() {
+      for (let i = 0; i < this.sidos.length; i++) {
+        // 법정동 코드(시, 구)
+        if (this.sidos[i].value == this.sidoCode)
+          this.setSidoName(this.sidos[i].text);
+      }
+      for (let i = 0; i < this.guguns.length; i++) {
+        if (this.guguns[i].value == this.gugunCode)
+          this.setGugunName(this.guguns[i].text);
+      }
+      console.log(this.sidoname + this.gugunname);
       if (this.gugunCode) this.getHouseList(this.gugunCode);
     },
   },

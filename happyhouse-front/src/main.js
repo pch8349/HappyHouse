@@ -2,6 +2,7 @@ import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
 import store from "./store";
+import * as VueGoogleMaps from "vue2-google-maps";
 
 import { BootstrapVue, IconsPlugin } from "bootstrap-vue";
 
@@ -15,6 +16,13 @@ Vue.use(BootstrapVue);
 Vue.use(IconsPlugin);
 
 Vue.config.productionTip = false;
+
+Vue.use(VueGoogleMaps, {
+  load: {
+    key: "AIzaSyASKTABus6UEFjZ_wBGW4ZqOMWhA38QCSM",
+    libraries: "places",
+  },
+});
 
 new Vue({
   router,

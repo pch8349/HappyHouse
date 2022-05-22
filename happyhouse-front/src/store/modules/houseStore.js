@@ -9,6 +9,8 @@ const houseStore = {
     guguns: [{ value: null, text: "선택하세요" }],
     houses: [],
     house: null,
+    sidoname: "",
+    gugunname: "",
   }, // computed로. 데이터 캐싱, 데이터 변경시 용이..
   //state 데이터 참조는 ...mapStates 사용
 
@@ -41,9 +43,21 @@ const houseStore = {
     SET_DETAIL_HOUSE: (state, house) => {
       state.house = house;
     },
+    SET_SIDO_NAME: (state, sidoname) => {
+      state.sidoname = sidoname;
+    },
+    SET_GUGUN_NAME: (state, gugunname) => {
+      state.gugunname = gugunname;
+    },
   },
 
   actions: {
+    setSidoName: ({ commit }, sidoname) => {
+      commit( "SET_SIDO_NAME", sidoname);
+    },
+    setGugunName: ({ commit }, gugunname) => {
+      commit( "SET_GUGUN_NAME", gugunname);
+    },
     clearSido: ({ commit }) => {
       commit("CLEAR_SIDO_LIST");
     },
