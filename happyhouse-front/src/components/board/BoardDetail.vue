@@ -9,7 +9,7 @@
       <b-col class="text-left">
         <b-button variant="outline-primary" @click="listArticle">목록</b-button>
       </b-col>
-      <b-col class="text-right">
+      <b-col v-if="check" class="text-right">
         <b-button
           variant="outline-info"
           size="sm"
@@ -44,12 +44,16 @@
 // import moment from "moment";
 //import http.get 하는 대신 src/api/board.js의 api 설정을 가져옴
 import { getArticle, deleteArticle } from "@/api/board";
+import jwtDecode from "jwt-decode";
 
 export default {
   name: "BoardDetail",
   data() {
     return {
       article: {},
+      id: "",
+      check: false,
+      check2: false,
     };
   },
   computed: {
@@ -58,6 +62,15 @@ export default {
         return this.article.content.split("\n").join("<br>");
       return "";
     },
+  },
+  beforeUpdate() {
+    this.id = jwtDecode(sessionStorage.getItem("access-token")).id;
+    this.check = this.id == "admin";
+    console.log(this.check);
+    console.log(this.article);
+    this.check2 = this.article.id == this.id;
+    this.check = this.check | this.check2;
+    console.log(this.check2);
   },
   created() {
     //http.get 해서 가져오기랑 같음

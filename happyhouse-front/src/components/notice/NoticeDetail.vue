@@ -11,7 +11,7 @@
           >목록</b-button
         >
       </b-col>
-      <b-col class="text-right">
+      <b-col v-if="id == noarticle.id" class="text-right">
         <b-button
           variant="outline-info"
           size="sm"
@@ -46,12 +46,14 @@
 // import moment from "moment";
 //import http.get 하는 대신 src/api/notice.js의 api 설정을 가져옴
 import { getNoArticle, deleteNoArticle } from "@/api/notice";
+import jwtDecode from "jwt-decode";
 
 export default {
   name: "NoticeDetail",
   data() {
     return {
       noarticle: {},
+      id: "",
     };
   },
   computed: {
@@ -74,6 +76,8 @@ export default {
         console.log("삭제시 에러발생!!", error);
       },
     );
+
+    this.id = jwtDecode(sessionStorage.getItem("access-token")).id;
   },
   methods: {
     listNoArticle() {
