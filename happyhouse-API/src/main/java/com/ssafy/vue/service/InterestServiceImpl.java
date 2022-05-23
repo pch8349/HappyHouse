@@ -60,6 +60,11 @@ public class InterestServiceImpl implements InterestService {
 
 	@Override
 	public List<Hospital> selectHospital(String sidoName, String gugunName) throws Exception {
+		StringBuilder sb = new StringBuilder();
+		if(sidoName.length() == 4) {
+			sb.append(sidoName.charAt(0)).append(sidoName.charAt(2));
+			sidoName = sb.toString();
+		}
 		return interestMapper.selectHospital(sidoName, gugunName);
 	}
 

@@ -36,13 +36,14 @@
 		select *
 		from hospital
 		where gugunName like concat('%', #{gugunName}, '%')
+		AND sidoName like concat('%', substring(#{sidoName},1,2),'%')
 		limit 50
 	</select>
 	
 	<select id="selectShop" parameterType="map" resultType="Shop">
 		select *
 		from shop
-		where gugunName like concat('%', #{gugunName}, '%')
+		where gugunName like concat('%', #{gugunName}, '%') AND sidoName like concat('%', #{sidoName}, '%')
 		limit 50
 	</select>
 	
