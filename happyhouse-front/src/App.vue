@@ -17,6 +17,15 @@ export default {
 </script>
 
 <style>
+.background {
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  background-image: url("@/assets/happyhouse.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 a {
   text-decoration: none;
 }
