@@ -6,66 +6,21 @@
     >
       <img src="@/assets/happyhouse2.png" />
     </div>
-    <b-container class="bv-example-row mt-3 text-center">
-      <h3 class="underline-steelblue"><b-icon icon="house"></b-icon> SSAFY</h3>
-      <b-row>
-        <b-col></b-col>
-        <GmapMap
-          ref="mapRef"
-          :center="{
-            lat: Number(latitude),
-            lng: Number(longitude),
-          }"
-          :zoom="16"
-          style="width: 100vw; height: 50vh"
-        >
-          <GmapMarker
-            :position="{
-              lat: Number(latitude),
-              lng: Number(longitude),
-            }"
-          />
-        </GmapMap>
-        <b-col></b-col>
-      </b-row>
-    </b-container>
+    <home-map></home-map>
     <br /><br /><br />
   </div>
 </template>
 
 <script>
+import HomeMap from "@/components/main/HomeMap.vue";
+
 export default {
   name: "HomeView",
+  components: {
+    HomeMap,
+  },
   props: {
     msg: String,
-  },
-  data() {
-    return {
-      latitude: "",
-      longitude: "",
-      // eslint-disable-next-line prettier/prettier
-      textContent: "",
-    };
-  },
-  created() {
-    if (!("geolocation" in navigator)) {
-      this.textContent = "Geolocation is not available.";
-      return;
-    }
-    this.textContent = "Locating...";
-
-    // get position
-    navigator.geolocation.getCurrentPosition(
-      (pos) => {
-        this.latitude = pos.coords.latitude;
-        this.longitude = pos.coords.longitude;
-        this.textContent =
-          "Your location data is " + this.latitude + ", " + this.longitude;
-      },
-      (err) => {
-        this.textContent = err.message;
-      },
-    );
   },
 };
 </script>
