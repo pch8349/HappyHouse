@@ -7,7 +7,7 @@
     </b-row>
     <b-row class="mb-1">
       <b-col class="text-right">
-        <b-button variant="outline-primary" @click="moveWrite()"
+        <b-button variant="outline-secondary" @click="moveWrite()"
           >글쓰기</b-button
         >
       </b-col>
@@ -58,7 +58,7 @@ export default {
       },
       (error) => {
         console.log(error);
-      },
+      }
     );
   },
   methods: {

@@ -8,7 +8,7 @@
       ></b-form-input>
     </b-col>
     <b-col class="sm-3" align="left">
-      <b-button variant="outline-primary" @click="sendKeyword">검색</b-button>
+      <b-button variant="outline-secondary" @click="sendKeyword">검색</b-button>
     </b-col> -->
     <b-col class="sm-3">
       <b-form-select v-model="yyyy" :options="yList"></b-form-select>
@@ -127,7 +127,7 @@ export default {
           gugunCode: this.gugunCode,
           ymd: String(this.yyyy) + String(this.mm),
         });
-      console.log(String(this.yyyy) + String(this.mm));
+      console.log(String(this.yyyy) + String(this.mm) + this.gugunCode);
     },
   },
 };

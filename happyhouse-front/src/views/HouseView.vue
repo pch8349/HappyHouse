@@ -1,7 +1,7 @@
 <template>
   <b-container class="bv-example-row mt-3 text-center">
     <h3 class="underline-orange">
-      <b-icon icon="building"></b-icon> House Service
+      <b-icon icon="building"></b-icon> 아파트 정보
     </h3>
     <b-row>
       <b-col>

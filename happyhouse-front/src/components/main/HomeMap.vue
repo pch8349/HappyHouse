@@ -1,6 +1,8 @@
 <template>
   <b-container class="bv-example-row mt-3 text-center">
-    <h3 class="underline-steelblue"><b-icon icon="house"></b-icon> SSAFY</h3>
+    <h3 class="underline-steelblue">
+      <b-icon icon="house"></b-icon> 내주변 매물
+    </h3>
     <b-row>
       <b-col></b-col>
       <GmapMap
@@ -9,15 +11,28 @@
           lat: Number(latitude),
           lng: Number(longitude),
         }"
-        :zoom="16"
+        :zoom="14"
         style="width: 100vw; height: 50vh"
       >
         <GmapMarker
-          :position="{
-            lat: Number(latitude),
-            lng: Number(longitude),
-          }"
+          v-for="(m, index) in markers"
+          :key="index"
+          :position="m.position"
+          :clickable="true"
+          :draggable="false"
+          @click="openInfoWindowTemplate(index)"
         />
+        <gmap-info-window
+          :options="{
+            maxWidth: 300,
+            pixelOffset: { width: 0, height: -35 },
+          }"
+          :position="infoWindow.position"
+          :opened="infoWindow.open"
+          @closeclick="infoWindow.open = false"
+        >
+          <div v-html="infoWindow.template"></div>
+        </gmap-info-window>
       </GmapMap>
       <b-col></b-col>
     </b-row>
@@ -28,6 +43,8 @@
 import axios from "axios";
 import { mapActions, mapState } from "vuex";
 import { sidoGugunCode } from "@/api/house";
+import $ from "jquery";
+
 const houseStore = "houseStore";
 export default {
   name: "HomeMap",
@@ -40,6 +57,12 @@ export default {
       address: "",
       mysido: "",
       mygugun: "",
+      markers: [],
+      infoWindow: {
+        position: { lat: 0, lng: 0 },
+        open: false,
+        template: "",
+      },
     };
   },
   async created() {
@@ -58,6 +81,12 @@ export default {
           "Your location data is " + this.latitude + ", " + this.longitude;
         console.log(this.latitude, this.longitude);
         console.log("하이");
+        this.markers.push({
+          position: {
+            lat: this.latitude,
+            lng: this.longitude,
+          },
+        });
         try {
           axios
             .get(
@@ -97,55 +126,55 @@ export default {
         this.textContent = err.message;
       },
     );
+    setTimeout(function () {
+      for (let i = 0; i < vthis.houses.length; i++) {
+        console.log(vthis.houses[i].법정동);
+        $.ajax({
+          url: `https://maps.googleapis.com/maps/api/geocode/json?address=
+        ${vthis.mysido} ${vthis.mygugun} ${vthis.houses[i].법정동} ${vthis.houses[i].지번}
+        &key=AIzaSyASKTABus6UEFjZ_wBGW4ZqOMWhA38QCSM&sensor=false`,
+          type: "POST",
+          async: false,
+          success: function (myJSONResult) {
+            if (myJSONResult.status == "OK") {
+              vthis.center = {
+                lat: myJSONResult.results[0].geometry.location.lat,
+                lng: myJSONResult.results[0].geometry.location.lng,
+              };
+              vthis.markers.push({
+                position: {
+                  lat: myJSONResult.results[0].geometry.location.lat,
+                  lng: myJSONResult.results[0].geometry.location.lng,
+                },
+              });
+            } else {
+              console.log(myJSONResult);
+            }
+            console.log(vthis.house.법정동);
+          },
+        });
+      }
+
+      console.log("herehere");
+      console.log(vthis.houses);
+    }, 1);
   },
   computed: {
     ...mapState(houseStore, ["houses"]),
   },
-  updated() {
-    console.log("herehere");
-    console.log(this.houses);
-  },
   methods: {
     ...mapActions(houseStore, ["getHouseList"]),
-    // async getStreetAddressFrom(lat, long, vthis) {
-    //   console.log("하이");
-    //   console.log(lat, long);
-    //   try {
-    //     var { data } = await axios.get(
-    //       "https://maps.googleapis.com/maps/api/geocode/json?latlng=" +
-    //         lat +
-    //         "," +
-    //         long +
-    //         "&key=AIzaSyASKTABus6UEFjZ_wBGW4ZqOMWhA38QCSM",
-    //     );
-    //     if (data.error_message) {
-    //       console.log(data.error_message);
-    //     } else {
-    //       this.address = data.results[0].formatted_address;
-    //       this.mysido = this.address.split(" ")[1];
-    //       this.mygugun = this.address.split(" ")[2];
-    //       console.log(this.mysido, this.mygugun);
-    //       sidoGugunCode(
-    //         { sido: this.mysido, gugun: this.mygugun },
-    //         function (response) {
-    //           console.log("여기여기");
-    //           console.log(response.data);
-    //           console.log(vthis);
-    //           vthis.getHouseList({
-    //             gugunCode: response.data,
-    //             ymd: "202204",
-    //           });
-    //         },
-    //         // function (error) {
-    //         //   console.log("아파트목록 에러발생!!", error);
-    //         // },
-    //       );
-    //       // this.getHouseList();
-    //     }
-    //   } catch (error) {
-    //     console.log(error.message);
-    //   }
-    // },
+    openInfoWindowTemplate(index) {
+      if (index != 0) {
+        this.infoWindow.position = this.markers[index].position;
+        this.infoWindow.template = `${this.houses[index - 1].아파트}`;
+        this.infoWindow.open = true;
+      } else {
+        this.infoWindow.position = this.markers[index].position;
+        this.infoWindow.template = `내위치`;
+        this.infoWindow.open = true;
+      }
+    },
   },
 };
 </script>

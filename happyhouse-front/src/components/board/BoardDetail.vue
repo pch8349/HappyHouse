@@ -2,16 +2,18 @@
   <b-container class="bv-example-row mt-3">
     <b-row>
       <b-col>
-        <b-alert show><h3>글보기</h3></b-alert>
+        <b-alert show variant="dark"><h3>글보기</h3></b-alert>
       </b-col>
     </b-row>
     <b-row class="mb-1">
       <b-col class="text-left">
-        <b-button variant="outline-primary" @click="listArticle">목록</b-button>
+        <b-button variant="outline-secondary" @click="listArticle"
+          >목록</b-button
+        >
       </b-col>
       <b-col v-if="check" class="text-right">
         <b-button
-          variant="outline-info"
+          variant="outline-dark"
           size="sm"
           @click="moveModifyArticle"
           class="mr-2"

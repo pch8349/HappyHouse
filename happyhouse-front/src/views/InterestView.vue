@@ -1,8 +1,6 @@
 <template>
   <b-container class="bv-example-row mt-3 text-center">
-    <h3 class="underline-orange">
-      <b-icon icon="cart4"></b-icon> Interest Service
-    </h3>
+    <h3 class="underline-orange"><b-icon icon="cart4"></b-icon> 관심지역</h3>
     <b-row>
       <b-col>
         <interest-search-bar></interest-search-bar>

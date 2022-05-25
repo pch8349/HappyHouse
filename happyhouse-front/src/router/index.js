@@ -164,7 +164,6 @@ const routes = [
   {
     path: "/house",
     name: "house",
-    beforeEnter: onlyAuthUser,
     component: () => import("@/views/HouseView.vue"),
   },
   {
@@ -172,6 +171,11 @@ const routes = [
     name: "todo",
     beforeEnter: onlyAuthUser,
     component: () => import("@/views/TodoView.vue"),
+  },
+  {
+    path: "/test",
+    name: "test",
+    component: () => import("@/views/TestView.vue"),
   },
 ];
 

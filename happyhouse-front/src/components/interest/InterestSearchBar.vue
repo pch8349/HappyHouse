@@ -8,7 +8,7 @@
       ></b-form-input>
     </b-col>
     <b-col class="sm-3" align="left">
-      <b-button variant="outline-primary" @click="sendKeyword">검색</b-button>
+      <b-button variant="outline-secondary" @click="sendKeyword">검색</b-button>
     </b-col> -->
     <b-col class="sm-1"></b-col>
     <b-col class="sm-5">

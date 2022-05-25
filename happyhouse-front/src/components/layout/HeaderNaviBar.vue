@@ -10,7 +10,7 @@
     </router-link>
   </div> -->
   <div>
-    <b-navbar toggleable="lg" type="dark" variant="dark">
+    <b-navbar toggleable="lg" type="dark" variant="dark" class="fixed-top">
       <b-navbar-brand href="#">
         <router-link to="/">
           <img
@@ -136,6 +136,7 @@ export default {
 
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Jua&display=swap");
+
 .sidenav {
   height: 100%;
   width: 200px;
