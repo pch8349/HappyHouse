@@ -8,14 +8,14 @@
         <interest-search-bar></interest-search-bar>
       </b-col>
     </b-row>
-    <b-row>
-      <b-col cols="6" align="left">
-        <interest-list />
-      </b-col>
-      <b-col cols="6">
-        <interest-detail />
-      </b-col>
-    </b-row>
+    <b-col>
+      <interest-detail />
+    </b-col>
+    <b-col align="center">
+      <div class="col-sm-2" />
+      <div class="col-sm-8"><interest-list /></div>
+    </b-col>
+    <br />
   </b-container>
 </template>
 <script>

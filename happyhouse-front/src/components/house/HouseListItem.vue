@@ -1,22 +1,31 @@
 <template>
-  <b-row
+  <b-tr
     class="m-2"
     @click="selectHouse"
     @mouseover="colorChange(true)"
     @mouseout="colorChange(false)"
     :class="{ 'mouse-over-bgcolor': isColor }"
   >
-    <b-col cols="2" class="text-center align-self-center">
-      <b-img
-        thumbnail
-        src="https://picsum.photos/250/250/?image=58"
-        alt="Image 1"
-      ></b-img>
-    </b-col>
+    <b-th>{{ house.일련번호 }}</b-th>
+    <b-th>{{ house.아파트 }}</b-th>
+    <b-th>{{ house.법정동 }}</b-th>
+    <b-th>{{ house.층 }}</b-th>
+    <b-th v-if="flag">{{ house.전용면적 }}m<sup>2</sup></b-th>
+    <b-th v-else>{{ house.전용면적 | changeToPyeong }} 평</b-th>
+    <b-th>{{ house.거래금액 }}만</b-th>
+  </b-tr>
+  <!-- <b-row
+    class="m-2"
+    @click="selectHouse"
+    @mouseover="colorChange(true)"
+    @mouseout="colorChange(false)"
+    :class="{ 'mouse-over-bgcolor': isColor }"
+  >
+    <b-col cols="2" class="text-center align-self-center"> </b-col>
     <b-col cols="10" class="align-self-center">
       [{{ house.일련번호 }}] {{ house.아파트 }}
     </b-col>
-  </b-row>
+  </b-row> -->
 </template>
 
 <script>
@@ -33,6 +42,12 @@ export default {
   },
   props: {
     house: Object,
+    flag: Boolean,
+  },
+  filters: {
+    changeToPyeong(house) {
+      return (house / 3.3058).toFixed(2);
+    },
   },
   methods: {
     ...mapActions(houseStore, ["detailHouse"]),

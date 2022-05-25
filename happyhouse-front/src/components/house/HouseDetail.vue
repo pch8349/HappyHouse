@@ -13,7 +13,7 @@
         ref="mapRef"
         :center="center"
         :zoom="16"
-        style="width: 100vw; height: 50vh"
+        style="width: 100vw; height: 43vh"
       >
         <GmapMarker
           :key="index"
@@ -22,7 +22,7 @@
         />
       </GmapMap>
     </b-row>
-    <b-row>
+    <!-- <b-row>
       <b-col>
         <b-alert show variant="secondary"
           >일련번호 : {{ house.일련번호 }}</b-alert
@@ -55,7 +55,7 @@
           }}원</b-alert
         >
       </b-col>
-    </b-row>
+    </b-row> -->
   </b-container>
 </template>
 

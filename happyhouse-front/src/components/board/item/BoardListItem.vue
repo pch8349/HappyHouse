@@ -3,6 +3,7 @@
     <b-td>{{ articleno }}</b-td>
     <b-th class="text-left">
       <router-link
+        style="text-decoration: none; color: black"
         :to="{ name: 'boardDetail', params: { articleno: articleno } }"
         >{{ subject }}</router-link
       >

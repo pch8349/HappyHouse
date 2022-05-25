@@ -15,7 +15,8 @@ export default {
   },
 };
 </script>
-
+@import
+url("https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Jua&display=swap");
 <style>
 .background {
   height: 100vh;
@@ -38,5 +39,10 @@ a:hover {
 
 a.router-link-exact-active {
   color: #3aa4ca;
+}
+
+* {
+  /* font-family: "Do Hyeon", sans-serif; */
+  font-family: "Jua", sans-serif;
 }
 </style>

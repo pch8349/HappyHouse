@@ -8,14 +8,12 @@
         <house-search-bar></house-search-bar>
       </b-col>
     </b-row>
-    <b-row>
-      <b-col cols="6" align="left">
-        <house-list />
-      </b-col>
-      <b-col cols="6">
-        <house-detail />
-      </b-col>
-    </b-row>
+    <b-col>
+      <house-detail />
+    </b-col>
+    <b-col align="center">
+      <house-list />
+    </b-col>
   </b-container>
 </template>
 <script>

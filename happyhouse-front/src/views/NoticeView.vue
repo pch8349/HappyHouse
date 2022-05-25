@@ -1,8 +1,6 @@
 <template>
   <b-container class="bv-example-row mt-3 text-center">
-    <h3 class="underline-hotpink">
-      <b-icon icon="megaphone-fill"></b-icon> Notice Service
-    </h3>
+    <br />
     <router-view></router-view>
   </b-container>
 </template>

@@ -14,9 +14,9 @@
       <b-navbar-brand href="#">
         <router-link to="/">
           <img
-            src="@/assets/ssafy_logo.png"
+            src="@/assets/happyhouse1.png"
             class="d-inline-block align-middle"
-            width="100px"
+            width="20%"
             alt="ssafy"
           />
         </router-link>
@@ -25,52 +25,54 @@
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
       <b-collapse id="nav-collapse" is-nav>
-        <b-navbar-nav>
+        <b-navbar-nav
+          style="display: flex; justify-content: space-around; width: 50%"
+        >
           <b-nav-item href="#"
-            ><router-link :to="{ name: 'home' }" class="link"
-              ><b-icon icon="house-fill" font-scale="1.5"></b-icon>
-              홈</router-link
+            ><router-link :to="{ name: 'home' }" class="link font mr-5"
+              ><b-icon icon="house" font-scale="1.5"></b-icon>
+              <br />홈</router-link
             ></b-nav-item
           >
           <b-nav-item href="#"
-            ><router-link :to="{ name: 'notice' }" class="link"
-              ><b-icon icon="megaphone-fill" font-scale="1.5"></b-icon>
-              공지사항</router-link
+            ><router-link :to="{ name: 'noticeList' }" class="link font mr-5"
+              ><b-icon icon="megaphone" font-scale="1.5"></b-icon>
+              <br />공지사항</router-link
             ></b-nav-item
           >
           <b-nav-item href="#"
-            ><router-link :to="{ name: 'board' }" class="link"
+            ><router-link :to="{ name: 'boardList' }" class="link font mr-5"
               ><b-icon icon="journal" font-scale="1.5"></b-icon>
-              게시판</router-link
+              <br />게시판</router-link
             ></b-nav-item
           >
           <b-nav-item href="#"
-            ><router-link :to="{ name: 'interest' }" class="link"
+            ><router-link :to="{ name: 'interest' }" class="link font mr-5"
               ><b-icon icon="cart4" font-scale="1.5"></b-icon>
-              관심지역</router-link
+              <br />관심지역</router-link
             ></b-nav-item
           >
           <b-nav-item href="#"
-            ><router-link :to="{ name: 'house' }" class="link"
+            ><router-link :to="{ name: 'house' }" class="link font mr-5"
               ><b-icon icon="building" font-scale="1.5"></b-icon>
-              아파트정보</router-link
+              <br />아파트정보</router-link
             ></b-nav-item
           >
           <b-nav-item href="#"
-            ><router-link :to="{ name: 'todo' }" class="link"
+            ><router-link :to="{ name: 'todo' }" class="link font mr-5"
               ><b-icon icon="calendar-check" font-scale="1.5"></b-icon>
-              TodoList</router-link
+              <br />TodoList</router-link
             ></b-nav-item
           >
         </b-navbar-nav>
 
-        <b-navbar-nav class="ml-auto" v-if="userInfo">
+        <b-navbar-nav class="ml-auto font" v-if="userInfo">
           <b-nav-item class="align-self-center"
             ><b-avatar
               variant="primary"
               v-text="userInfo ? userInfo.id.charAt(0).toUpperCase() : ''"
             ></b-avatar
-            >{{ userInfo.username }}({{ userInfo.id }})님
+            >{{ userInfo.username }} {{ userInfo.id }} 님
             환영합니다.</b-nav-item
           >
           <b-nav-item class="align-self-center"
@@ -133,6 +135,7 @@ export default {
 </script>
 
 <style>
+@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Jua&display=swap");
 .sidenav {
   height: 100%;
   width: 200px;
@@ -211,5 +214,10 @@ export default {
 .fa-caret-down {
   float: right;
   padding-right: 8px;
+}
+
+.font {
+  font-size: 20px;
+  color: rgb(204, 157, 71);
 }
 </style>

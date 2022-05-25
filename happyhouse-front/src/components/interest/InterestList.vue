@@ -3,12 +3,16 @@
     v-if="interests && interests.length != 0"
     class="bv-example-row mt-3"
   >
-    <interest-list-item
-      v-for="(interest, index) in interests"
-      :key="index"
-      :interest="interest"
-      :idx="index"
-    />
+    <b-table-simple hover responsive align="center">
+      <tbody>
+        <interest-list-item
+          v-for="(interest, index) in interests"
+          :key="index"
+          :interest="interest"
+          :idx="index"
+        />
+      </tbody>
+    </b-table-simple>
   </b-container>
   <b-container v-else class="bv-example-row mt-3">
     <b-row>

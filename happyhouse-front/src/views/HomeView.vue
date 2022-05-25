@@ -1,11 +1,10 @@
 <template>
   <div>
-    <div class="img">
-      <div class="content">
-        <h1>해피하우스</h1>
-        <h2>by park, sin</h2>
-      </div>
-      <div class="img-cover"></div>
+    <div
+      class="img"
+      style="display: flex; justify-content: center; align-items: center"
+    >
+      <img src="@/assets/happyhouse2.png" />
     </div>
     <b-container class="bv-example-row mt-3 text-center">
       <h3 class="underline-steelblue"><b-icon icon="house"></b-icon> SSAFY</h3>
@@ -44,6 +43,7 @@ export default {
     return {
       latitude: "",
       longitude: "",
+      // eslint-disable-next-line prettier/prettier
       textContent: "",
     };
   },
@@ -71,6 +71,7 @@ export default {
 </script>
 
 <style scoped>
+@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap");
 .underline-steelblue {
   display: inline-block;
   background: linear-gradient(
@@ -79,11 +80,20 @@ export default {
     rgba(72, 190, 233, 0.3) 30%
   );
 }
+
 .img {
   position: relative;
   background-image: url("@/assets/background.png");
   height: 40vh;
   min-height: 300px;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-size: cover;
+}
+
+.img_2 {
+  position: absolute;
+  background-image: url("@/assets/happyhouse2.png");
+  width: 10%;
   background-size: cover;
 }
 

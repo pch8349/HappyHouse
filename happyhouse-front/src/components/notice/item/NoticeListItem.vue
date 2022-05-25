@@ -2,9 +2,11 @@
   <b-tr>
     <b-td>{{ idx }}</b-td>
     <b-th class="text-left">
-      <router-link :to="{ name: 'noticeDetail', params: { idx: idx } }">{{
-        title
-      }}</router-link>
+      <router-link
+        style="text-decoration: none; color: black"
+        :to="{ name: 'noticeDetail', params: { idx: idx } }"
+        >{{ title }}</router-link
+      >
     </b-th>
     <b-td>{{ id }}</b-td>
     <b-td>{{ date }}</b-td>
