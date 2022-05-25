@@ -36,4 +36,9 @@
 		order by aptName
 	</select>
 	
+	<select id="getSidoGugunCode" parameterType="map" resultType="string">
+        select dongCode
+        from baseaddress where sidoName like #{sido} AND gugunName like #{gugun} limit 1;
+    </select>
+	
 </mapper>

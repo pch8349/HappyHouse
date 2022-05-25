@@ -35,4 +35,9 @@ public class HouseMapServiceImpl implements HouseMapService {
 		return houseMapMapper.getAptInDong(dong);
 	}
 
+	@Override
+	public String getSidoGugunCode(String sido, String gugun) throws Exception {
+		return houseMapMapper.getSidoGugunCode(sido, gugun).substring(0, 5);
+	}
+
 }

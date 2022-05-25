@@ -15,4 +15,12 @@ function houseList(params, success, fail) {
   house.get(``, { params: params }).then(success).catch(fail);
 }
 
-export { sidoList, gugunList, houseList };
+function sidoGugunCode(params, success, fail) {
+  console.log(params.sido, params.gugun);
+  api
+    .get(`/map/sidoguguncode/${params.sido}/${params.gugun}`)
+    .then(success)
+    .catch(fail);
+}
+
+export { sidoList, gugunList, houseList, sidoGugunCode };
